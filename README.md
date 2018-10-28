@@ -8,4 +8,4 @@ A set of tools for the ~~lazy~~ pragmatic [Maze Rats](https://questingbeast.itch
 
 Maze Rats is an RPG and sandbox toolkit for old-school-style adventuring by Ben Milton. It makes heavy usage of randomly generated characters, spells, monsters, et. al.
 
-If you're interested you can [grab your copy here]((https://questingbeast.itch.io/maze-rats))
+If you're interested you can [grab your copy here](https://questingbeast.itch.io/maze-rats)
