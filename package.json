@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "https://hack-and-slash.github.io/maze-rats-lab",
   "dependencies": {
+    "random-js": "^1.0.8",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-scripts": "2.0.5",
-    "seedrandom": "^2.4.4"
+    "react-scripts": "2.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -17,7 +17,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-
   "eslintConfig": {
     "extends": "react-app"
   },

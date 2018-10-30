@@ -1,9 +1,11 @@
 import * as data from '../data/tables.json'
-import 'seedrandom'
+import Random from 'random-js'
 
 class Generator {
     constructor(seed = null) {
-        this.rng = new Math.seedrandom(seed);
+        let rng = Random.engines.mt19937()
+        null === seed ? rng.autoSeed() : rng.seed(seed)
+        this.rng = rng
     }
 
     name(gender) {
@@ -19,9 +21,7 @@ class Generator {
     }
 
     diceRoll(faces) {
-        const min = 1
-        const max = faces
-        return Math.floor(this.rng() * (max - min)) + min
+        return Random.die(faces)(this.rng)
     }
 
     d6() {
