@@ -1,7 +1,7 @@
 {
   "main.css": "/maze-rats-lab/static/css/main.d39d33e7.chunk.css",
-  "main.js": "/maze-rats-lab/static/js/main.3905aebb.chunk.js",
-  "main.js.map": "/maze-rats-lab/static/js/main.3905aebb.chunk.js.map",
+  "main.js": "/maze-rats-lab/static/js/main.46e44a6f.chunk.js",
+  "main.js.map": "/maze-rats-lab/static/js/main.46e44a6f.chunk.js.map",
   "static/css/1.3d5bf985.chunk.css": "/maze-rats-lab/static/css/1.3d5bf985.chunk.css",
   "static/js/1.cf2a1358.chunk.js": "/maze-rats-lab/static/js/1.cf2a1358.chunk.js",
   "static/js/1.cf2a1358.chunk.js.map": "/maze-rats-lab/static/js/1.cf2a1358.chunk.js.map",
@@ -11,6 +11,6 @@
   "static/css/main.d39d33e7.chunk.css.map": "/maze-rats-lab/static/css/main.d39d33e7.chunk.css.map",
   "static/css/1.3d5bf985.chunk.css.map": "/maze-rats-lab/static/css/1.3d5bf985.chunk.css.map",
   "index.html": "/maze-rats-lab/index.html",
-  "precache-manifest.2e51f04cb4565747b792e1f8d4fb32b4.js": "/maze-rats-lab/precache-manifest.2e51f04cb4565747b792e1f8d4fb32b4.js",
+  "precache-manifest.3cd751f1a8e1e0f722da3a5935059574.js": "/maze-rats-lab/precache-manifest.3cd751f1a8e1e0f722da3a5935059574.js",
   "service-worker.js": "/maze-rats-lab/service-worker.js"
 }
