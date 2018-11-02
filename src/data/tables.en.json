@@ -77,8 +77,8 @@
             },
             "4": {
                 "1": "Morgot",
-                "2": "Minerva",
-                "3": "Nerissa",
+                "2": "Nerissa",
+                "3": "Minerva",
                 "4": "Odette",
                 "5": "Olga",
                 "6": "Orchid"
@@ -473,7 +473,7 @@
             "3": "Elegant",
             "4": "Embroidered",
             "5": "Exotic",
-            "6": "Fashinable"
+            "6": "Fashionable"
         },
         "3": {
             "1": "Flamboyant",
@@ -610,52 +610,304 @@
     },
     "spellComponent": {
 		"physicalEffect": {
-            "1": "Animating",
-            "2": "Attracting",
-            "3": "Binding",
-            "4": "Blossoming",
-            "5": "Consuming",
-            "6": "Creeping"
+            "1": {
+                "1": "Animating",
+                "2": "Attracting",
+                "3": "Binding",
+                "4": "Blossoming",
+                "5": "Consuming",
+                "6": "Creeping"
+            },
+            "2": {
+                "1": "Crushing",
+                "2": "Diminishing",
+                "3": "Dividing",
+                "4": "Duplicating",
+                "5": "Eveloping",
+                "6": "Expanding"
+            },
+            "3": {
+                "1": "Fusing",
+                "2": "Grasping",
+                "3": "Hastening",
+                "4": "Hindering",
+                "5": "Illuminating",
+                "6": "Imprisoning"
+            },
+            "4": {
+                "1": "Levitating",
+                "2": "Opening",
+                "3": "Petrifying",
+                "4": "Phasing",
+                "5": "Piercing",
+                "6": "Pursuing"
+            },
+            "5": {
+                "1": "Reflecting",
+                "2": "Regenerating",
+                "3": "Rending",
+                "4": "Repelling",
+                "5": "Ressurrecting",
+                "6": "Screaming"
+            },
+            "6": {
+                "1": "Sealing",
+                "2": "Shapeshifting",
+                "3": "Shielding",
+                "4": "Spawning",
+                "5": "Transmuting",
+                "6": "Transporting"
+            }
         },
 		"physicalElement": {
-            "1": "Acid",
-            "2": "Amber",
-            "3": "Bark",
-            "4": "Blood",
-            "5": "Bone",
-            "6": "Brine"
+            "1": {
+                "1": "Acid",
+                "2": "Amber",
+                "3": "Bark",
+                "4": "Blood",
+                "5": "Bone",
+                "6": "Brine"
+            },
+            "2": {
+                "1": "Clay",
+                "2": "Crow",
+                "3": "Crystal",
+                "4": "Ember",
+                "5": "Flesh",
+                "6": "Fungus"
+            },
+            "3": {
+                "1": "Glass",
+                "2": "Honey",
+                "3": "Ice",
+                "4": "Insect",
+                "5": "Wood",
+                "6": "Lava"
+            },
+            "4": {
+                "1": "Moss",
+                "2": "Obsidian",
+                "3": "Oil",
+                "4": "Poison",
+                "5": "Rat",
+                "6": "Salt"
+            },
+            "5": {
+                "1": "Sand",
+                "2": "Sap",
+                "3": "Serpent",
+                "4": "Slime",
+                "5": "Stone",
+                "6": "Tar"
+            },
+            "6": {
+                "1": "Thorn",
+                "2": "Vine",
+                "3": "Water",
+                "4": "Wine",
+                "5": "Wood",
+                "6": "Worm"
+            }
         },
 		"physicalForm": {
-            "1": "Altar",
-            "2": "Armor",
-            "3": "Arrow",
-            "4": "Beast",
-            "5": "Blade",
-            "6": "Cauldron"
+            "1": {
+                "1": "Altar",
+                "2": "Armor",
+                "3": "Arrow",
+                "4": "Beast",
+                "5": "Blade",
+                "6": "Cauldron"
+            },
+            "2": {
+                "1": "Chain",
+                "2": "Chariot",
+                "3": "Claw",
+                "4": "Cloak",
+                "5": "Colossus",
+                "6": "Crown"
+            },
+            "3": {
+                "1": "Elemental",
+                "2": "Eye",
+                "3": "Fountain",
+                "4": "Gate",
+                "5": "Golem",
+                "6": "Hammer"
+            },
+            "4": {
+                "1": "Horn",
+                "2": "Key",
+                "3": "Mask",
+                "4": "Monolith",
+                "5": "Pit",
+                "6": "Prison"
+            },
+            "5": {
+                "1": "Sentinel",
+                "2": "Servant",
+                "3": "Shield",
+                "4": "Spear",
+                "5": "Steed",
+                "6": "Swarm"
+            },
+            "6": {
+                "1": "Tentacle",
+                "2": "Throne",
+                "3": "Torch",
+                "4": "Trap",
+                "5": "Wall",
+                "6": "Web"
+            }
         },
 		"etherealEffect": {
-            "1": "Avenging",
-            "2": "Banishing",
-            "3": "Bewildering",
-            "4": "Blinding",
-            "5": "Charming",
-            "6": "Communicating"
+            "1": {
+                "1": "Avenging",
+                "2": "Banishing",
+                "3": "Bewildering",
+                "4": "Blinding",
+                "5": "Charming",
+                "6": "Communicating"
+            },
+            "2": {
+                "1": "Compelling",
+                "2": "Concealing",
+                "3": "Deafening",
+                "4": "Deceiving",
+                "5": "Deciphering",
+                "6": "Disguising"
+            },
+            "3": {
+                "1": "Dispelling",
+                "2": "Emboldening",
+                "3": "Encoding",
+                "4": "Energizing",
+                "5": "Enlightening",
+                "6": "Enraging"
+            },
+            "4": {
+                "1": "Excruciating",
+                "2": "Foreseeing",
+                "3": "Intoxicating",
+                "4": "Maddening",
+                "5": "Mesmerizing",
+                "6": "Mindreading"
+            },
+            "5": {
+                "1": "Nullifying",
+                "2": "Paralyzing",
+                "3": "Revealing",
+                "4": "Revolting",
+                "5": "Scrying",
+                "6": "Silencing"
+            },
+            "6": {
+                "1": "Soothing",
+                "2": "Summoning",
+                "3": "Terrifying",
+                "4": "Warding",
+                "5": "Wearying",
+                "6": "Withering"
+            }
         },
 		"etherealElement": {
-            "1": "Ash",
-            "2": "Chaos",
-            "3": "Distortion",
-            "4": "Dream",
-            "5": "Dust",
-            "6": "Echo"
+            "1": {
+                "1": "Ash",
+                "2": "Chaos",
+                "3": "Distortion",
+                "4": "Dream",
+                "5": "Dust",
+                "6": "Echo"
+            },
+            "2": {
+                "1": "Ectoplasm",
+                "2": "Fire",
+                "3": "Fog",
+                "4": "Ghost",
+                "5": "Harmony",
+                "6": "Heat"
+            },
+            "3": {
+                "1": "Light",
+                "2": "Lightning",
+                "3": "Memory",
+                "4": "Mind",
+                "5": "Mutation",
+                "6": "Negation"
+            },
+            "4": {
+                "1": "Plague",
+                "2": "Plasma",
+                "3": "Probability",
+                "4": "Rain",
+                "5": "Rot",
+                "6": "Shadow"
+            },
+            "5": {
+                "1": "Smoke",
+                "2": "Snow",
+                "3": "Soul",
+                "4": "Star",
+                "5": "Stasis",
+                "6": "Steam"
+            },
+            "6": {
+                "1": "Thunder",
+                "2": "Time",
+                "3": "Void",
+                "4": "Warp",
+                "5": "Whisper",
+                "6": "Wind"
+            }
         },
 		"etherealForm": {
-            "1": "Aura",
-            "2": "Beacon",
-            "3": "Beam",
-            "4": "Blast",
-            "5": "Blob",
-            "6": "Bolt"
+            "1": {
+                "1": "Aura",
+                "2": "Beacon",
+                "3": "Beam",
+                "4": "Blast",
+                "5": "Blob",
+                "6": "Bolt"
+            },
+            "2": {
+                "1": "Bubble",
+                "2": "Call",
+                "3": "Cascade",
+                "4": "Circle",
+                "5": "Cloud",
+                "6": "Coil"
+            },
+            "3": {
+                "1": "Cone",
+                "2": "Cube",
+                "3": "Dance",
+                "4": "Disk",
+                "5": "Field",
+                "6": "Form"
+            },
+            "4": {
+                "1": "Gaze",
+                "2": "Loop",
+                "3": "Moment",
+                "4": "Nexus",
+                "5": "Portal",
+                "6": "Pulse"
+            },
+            "5": {
+                "1": "Pyramid",
+                "2": "Ray",
+                "3": "Shard",
+                "4": "Sphere",
+                "5": "Spray",
+                "6": "Storm"
+            },
+            "6": {
+                "1": "Swarm",
+                "2": "Torrent",
+                "3": "Touch",
+                "4": "Vortex",
+                "5": "Wave",
+                "6": "Word"
+            }
         }
     },
     "spellFormula": {

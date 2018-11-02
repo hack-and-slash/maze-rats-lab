@@ -1,19 +1,20 @@
-import * as data from '../data/tables.json'
+import Data from '../data/index.js'
 import Random from 'random-js'
 
 class Generator {
-    constructor(seed = null) {
+    constructor(seed = null, lang = 'en') {
         let rng = Random.engines.mt19937()
         null === seed ? rng.autoSeed() : rng.seed(seed)
         this.rng = rng
+        this.lang = lang
     }
 
     name(gender) {
-        return data.names[gender][this.d6()][this.d6()]
+        return Data[this.lang].names[gender][this.d6()][this.d6()]
     }
 
     surname(origins) {
-        return data.surnames[origins][this.d6()][this.d6()]
+        return Data[this.lang].surnames[origins][this.d6()][this.d6()]
     }
 
     fullname(gender, origin) {
@@ -36,15 +37,15 @@ class Generator {
     }
 
     abilitySet() {
-        return data.abilities[this.d6()]
+        return Data[this.lang].abilities[this.d6()]
     }
 
     feature() {
-        return data.features[this.d6()]
+        return Data[this.lang].features[this.d6()]
     }
 
     item() {
-        return data.items[this.d6()][this.d6()]
+        return Data[this.lang].items[this.d6()][this.d6()]
     }
     class
     items(n = 6) {
@@ -61,7 +62,7 @@ class Generator {
     }
 
     weapon() {
-        return data.weapons[this.diceRoll(13)]
+        return Data[this.lang].weapons[this.diceRoll(13)]
     }
 
     weapons(n = 2) {
@@ -69,32 +70,32 @@ class Generator {
     }
 
     appearance() {
-        return data.appearance[this.d6()][this.d6()]
+        return Data[this.lang].appearance[this.d6()][this.d6()]
     }
 
     physicalDetail() {
-        return data.physicalDetail[this.d6()][this.d6()]
+        return Data[this.lang].physicalDetail[this.d6()][this.d6()]
     }
 
     background() {
-        return data.background[this.d6()][this.d6()]
+        return Data[this.lang].background[this.d6()][this.d6()]
     }
 
     clothing() {
-        return data.clothing[this.d6()][this.d6()]
+        return Data[this.lang].clothing[this.d6()][this.d6()]
     }
 
     personality() {
-        return data.personality[this.d6()][this.d6()]
+        return Data[this.lang].personality[this.d6()][this.d6()]
     }
 
     mannerism() {
-        return data.mannerism[this.d6()][this.d6()]
+        return Data[this.lang].mannerism[this.d6()][this.d6()]
     }
 
     spell() {
-        return data.spellFormula[this.d6()][this.diceRoll(2)]
-            .map((component) => data.spellComponent[component][this.d6()])
+        return Data[this.lang].spellFormula[this.d6()][this.diceRoll(2)]
+            .map((component) => Data[this.lang].spellComponent[component][this.d6()][this.d6()])
             .join(" ")
     }
 
