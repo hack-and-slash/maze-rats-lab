@@ -47,7 +47,7 @@ class Generator {
     item() {
         return Data[this.lang].items[this.d6()][this.d6()]
     }
-    class
+
     items(n = 6) {
         return Array(n).fill().reduce((inventory, _) => {
 
@@ -121,7 +121,7 @@ class Generator {
             mannerism: this.mannerism()
         }
 
-        if ("1 spell slot" === char.feature) {
+        if ("1 spell slot" === char.feature || "Uma magia diária" === char.feature) {
             char.spells = [this.spell()]
         }
 
