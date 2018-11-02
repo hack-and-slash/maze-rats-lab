@@ -913,27 +913,27 @@
     "spellFormula": {
         "1": {
             "1": ["physicalEffect", "physicalForm"],
-            "2": ["etherealElement", "physicalForm"]
+            "2": ["physicalForm", "etherealElement"]
         },
         "2": {
             "1": ["physicalEffect", "etherealForm"],
-            "2": ["etherealElement", "etherealForm"]
+            "2": ["etherealForm", "etherealElement"]
         },
         "3": {
-            "1": ["etherealEffect", "physicalForm"],
+            "1": ["physicalForm", "etherealEffect"],
             "2": ["physicalEffect", "physicalElement"]
         },
         "4": {
-            "1": ["etherealEffect", "etherealForm"],
+            "1": ["etherealForm", "etherealEffect"],
             "2": ["physicalEffect", "etherealElement"]
         },
         "5": {
-            "1": ["physicalElement", "physicalForm"],
-            "2": ["etherealEffect", "physicalElement"]
+            "1": ["physicalForm", "physicalElement"],
+            "2": ["physicalElement", "etherealEffect"]
         },
         "6": {
-            "1": ["physicalElement", "etherealForm"],
-            "2": ["etherealEffect", "etherealElement"]
+            "1": ["etherealForm", "physicalElement"],
+            "2": ["etherealElement", "etherealEffect"]
         }
     }
 }
