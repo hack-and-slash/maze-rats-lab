@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/maze-rats-lab/precache-manifest.2f14641477214fc1a099a8209e27eab7.js"
+  "/maze-rats-lab/precache-manifest.2fd358ea90d6a45acc0606959b8b84d7.js"
 );
 
 workbox.clientsClaim();
