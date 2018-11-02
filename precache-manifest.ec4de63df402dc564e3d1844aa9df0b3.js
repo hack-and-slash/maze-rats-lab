@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "e8c322de9658cbeb8a774b6624167c2c",
-    "url": "/maze-rats-lab/static/media/brand-icons.e8c322de.woff2"
+    "revision": "faff92145777a3cbaf8e7367b4807987",
+    "url": "/maze-rats-lab/static/media/icons.faff9214.woff"
   },
   {
     "revision": "daa138a320c3b43cfe2c",
@@ -48,8 +48,8 @@ self.__precacheManifest = [
     "url": "/maze-rats-lab/static/js/main.daa138a3.chunk.js"
   },
   {
-    "revision": "faff92145777a3cbaf8e7367b4807987",
-    "url": "/maze-rats-lab/static/media/icons.faff9214.woff"
+    "revision": "e8c322de9658cbeb8a774b6624167c2c",
+    "url": "/maze-rats-lab/static/media/brand-icons.e8c322de.woff2"
   },
   {
     "revision": "a046592bac8f2fd96e994733faf3858c",
@@ -60,20 +60,20 @@ self.__precacheManifest = [
     "url": "/maze-rats-lab/static/media/flags.9c74e172.png"
   },
   {
-    "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
-    "url": "/maze-rats-lab/static/media/icons.8e3c7f55.eot"
-  },
-  {
     "revision": "b87b9ba532ace76ae9f6edfe9f72ded2",
     "url": "/maze-rats-lab/static/media/icons.b87b9ba5.ttf"
   },
   {
-    "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
-    "url": "/maze-rats-lab/static/media/brand-icons.c5ebe0b3.ttf"
+    "revision": "8e3c7f5520f5ae906c6cf6d7f3ddcd19",
+    "url": "/maze-rats-lab/static/media/icons.8e3c7f55.eot"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
     "url": "/maze-rats-lab/static/media/brand-icons.13db00b7.eot"
+  },
+  {
+    "revision": "c5ebe0b32dc1b5cc449a76c4204d13bb",
+    "url": "/maze-rats-lab/static/media/brand-icons.c5ebe0b3.ttf"
   },
   {
     "revision": "82f60bd0b94a1ed68b1e6e309ce2e8c3",
@@ -88,7 +88,7 @@ self.__precacheManifest = [
     "url": "/maze-rats-lab/static/css/1.ac373dad.chunk.css"
   },
   {
-    "revision": "b59048a56e298fab14801a8f29023d8a",
+    "revision": "eb001dba9a1cd10deb132012574a44e9",
     "url": "/maze-rats-lab/index.html"
   }
 ];
