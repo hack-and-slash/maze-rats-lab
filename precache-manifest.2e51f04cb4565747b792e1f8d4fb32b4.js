@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/maze-rats-lab/static/media/icons.faff9214.woff"
   },
   {
-    "revision": "d2a190ebd241762b84a6",
+    "revision": "3905aebb677579b389a1",
     "url": "/maze-rats-lab/static/css/main.d39d33e7.chunk.css"
   },
   {
@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/maze-rats-lab/static/js/runtime~main.8693f551.js"
   },
   {
-    "revision": "cd6c777f1945164224dee082abaea03a",
-    "url": "/maze-rats-lab/static/media/outline-icons.cd6c777f.woff2"
-  },
-  {
     "revision": "ef60a4f6c25ef7f39f2d25a748dbecfe",
     "url": "/maze-rats-lab/static/media/outline-icons.ef60a4f6.woff"
+  },
+  {
+    "revision": "cd6c777f1945164224dee082abaea03a",
+    "url": "/maze-rats-lab/static/media/outline-icons.cd6c777f.woff2"
   },
   {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/maze-rats-lab/static/media/icons.0ab54153.woff2"
   },
   {
-    "revision": "d2a190ebd241762b84a6",
-    "url": "/maze-rats-lab/static/js/main.d2a190eb.chunk.js"
+    "revision": "3905aebb677579b389a1",
+    "url": "/maze-rats-lab/static/js/main.3905aebb.chunk.js"
   },
   {
     "revision": "e8c322de9658cbeb8a774b6624167c2c",
@@ -84,7 +84,7 @@ self.__precacheManifest = [
     "url": "/maze-rats-lab/static/css/1.3d5bf985.chunk.css"
   },
   {
-    "revision": "f9cbd4724b409422a2fe23d38971c3dd",
+    "revision": "dc9293d452cf1e2ce42c803279f47782",
     "url": "/maze-rats-lab/index.html"
   }
 ];
