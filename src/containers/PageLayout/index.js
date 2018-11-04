@@ -9,11 +9,11 @@ import {
   Menu,
   Responsive,
   Segment,
+  Select,
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
 import { withRouter, Route, Link } from 'react-router-dom'
-import LangSelector from '../../components/LangSelector'
 import PrettyPrintJson from '../../PrettyPrintJson'
 import Generator from '../../services/generator.js'
 
@@ -61,6 +61,16 @@ const MenuLink = withRouter(({to, location, children}) => {
           {children}
         </Link>
       </Menu.Item>
+    )
+})
+
+const LangSelector = withRouter(({history, location}) => {
+    let countryOptions = [
+        { key: 'ptbr', value: 'ptbr', flag: 'br', text: 'Brazillian Portuguese' },
+        { key: 'en', value: 'en', flag: 'us', text: 'English' }
+    ]
+    return (
+        <Select style={{ fontSize: 10, width:"200px" }} onChange={(e,{k, value}) => history.push(location.pathname+'?lang='+value)} placeholder='Change language' options={countryOptions} />
     )
 })
 
