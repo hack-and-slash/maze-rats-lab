@@ -1,0 +1,3 @@
+files:
+  - source: /src/**/*.js
+    translation: /i18n/%locale_with_underscore%.json
