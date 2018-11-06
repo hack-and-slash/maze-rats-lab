@@ -5,8 +5,8 @@
   "homepage": "https://hack-and-slash.github.io/maze-rats-lab",
   "dependencies": {
     "random-js": "^1.0.8",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5",
     "semantic-ui-css": "^2.4.1",
