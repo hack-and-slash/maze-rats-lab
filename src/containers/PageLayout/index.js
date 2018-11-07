@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import WickedGrit from '../../assets/fonts/WickedGrit.ttf';
-import React, { Component, Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import {
   Container,
   Header,
@@ -17,11 +17,6 @@ import { withRouter, Route, Link } from 'react-router-dom'
 import PrettyPrintJson from '../../PrettyPrintJson'
 import Generator from '../../services/generator.js'
 
-/* eslint-disable react/no-multi-comp */
-/* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
- * such things.
- */
-
  const Title = styled(Header)`
  @font-face {
     font-family: 'WickedGrit';
@@ -33,22 +28,28 @@ import Generator from '../../services/generator.js'
   font-size: ${(props) => props.mobile ? '2em' : '4em'};
   font-weight: normal;
   margin-bottom: 0;
-  margin-top: ${(props) => props.mobile ? '1.5em' : '3em'}
+  margin-top: ${(props) => props.mobile ? '1.5em' : '3em'};
  `
 
-const HomepageHeading = ({ mobile }) => (
-  <Container text>
-    <Title as='h1' inverted mobile={mobile}>
-      Maze Rats Lab
-    </Title>
-    <Header as='h2' inverted mobile={mobile} style={{
-        fontSize: mobile ? '1.5em' : '1.7em',
-        fontWeight: 'normal',
-        marginTop: mobile ? '0.5em' : '1.5em',
-      }}>The <strike>lazy</strike> pragmatic player toolbox.
-      </Header>
-  </Container>
-)
+const HomepageHeading = ({ mobile }) => {
+
+  const SubTitle = styled(Header)`
+    font-size: ${(props) => props.mobile ? '1.5em' : '1.7em'};
+    font-weight: 'normal';
+    margin-top: ${(props) => props.mobile ? '0.5em' : '1.5em'};
+  `
+
+  return (
+    <Container text>
+      <Title as='h1' inverted mobile={mobile}>
+        Maze Rats Lab
+      </Title>
+      <SubTitle as='h2' inverted mobile={mobile}>
+          The <strike>lazy</strike> pragmatic player toolbox.
+      </SubTitle>
+    </Container>
+  )
+}
 
 HomepageHeading.propTypes = {
   mobile: PropTypes.bool,
@@ -65,7 +66,7 @@ const MenuLink = withRouter(({to, location, children}) => {
 })
 
 const LangSelector = withRouter(({history, location}) => {
-    let countryOptions = [
+    const countryOptions = [
         { key: 'ptbr', value: 'ptbr', flag: 'br', text: 'Brazillian Portuguese' },
         { key: 'en', value: 'en', flag: 'us', text: 'English' }
     ]
@@ -79,57 +80,53 @@ const MainContainer = styled(Responsive)`
   min-height: 100vh;
   flex-direction: column;
 `
+const DesktopContainer = ({ children }) => {
 
-/* Heads up!
- * Neither Semantic UI nor Semantic UI React offer a responsive navbar, however, it can be implemented easily.
- * It can be more complicated, but you can create really flexible markup.
- */
-class DesktopContainer extends Component {
-  state = {}
+  const [fixed, setFixed] = useState(true);
 
-  hideFixedMenu = () => this.setState({ fixed: false })
-  showFixedMenu = () => this.setState({ fixed: true })
+  const hideFixedMenu = () => setFixed(false)
+  const showFixedMenu = () => setFixed(true)
 
-  render() {
-    const { children } = this.props
-    const { fixed } = this.state
+  const HeadingContainer = styled(Segment)`
+    min-height: 300;
+    padding: '1em 0em';
+    text-align: center
+  `
 
-    return (
-      <MainContainer minWidth={Responsive.onlyTablet.minWidth}>
-        <Visibility
-          once={false}
-          onBottomPassed={this.showFixedMenu}
-          onBottomPassedReverse={this.hideFixedMenu}
+  return (
+    <MainContainer minWidth={Responsive.onlyTablet.minWidth}>
+      <Visibility
+        once={false}
+        onBottomPassed={showFixedMenu}
+        onBottomPassedReverse={hideFixedMenu}
+      >
+        <HeadingContainer
+          inverted
+          textAlign='center'
+          vertical
         >
-          <Segment
+          <Menu
+            fixed={fixed ? 'top' : null}
             inverted
-            textAlign='center'
-            style={{ minHeight: 300, padding: '1em 0em' }}
-            vertical
+            pointing={!fixed}
+            secondary={!fixed}
+            size='large'
           >
-            <Menu
-              fixed={fixed ? 'top' : null}
-              inverted={!fixed}
-              pointing={!fixed}
-              secondary={!fixed}
-              size='large'
-            >
-              <Container>
-                <MenuLink to="/character">Character generator</MenuLink>
-                <MenuLink to="/spell">Spell generator</MenuLink>
-                <Menu.Item position='right'>
-                  <LangSelector />
-                </Menu.Item>
-              </Container>
-            </Menu>
-            <HomepageHeading />
-          </Segment>
-        </Visibility>
+            <Container>
+              <MenuLink to="/character">Character generator</MenuLink>
+              <MenuLink to="/spell">Spell generator</MenuLink>
+              <Menu.Item position='right'>
+                <LangSelector />
+              </Menu.Item>
+            </Container>
+          </Menu>
+          <HomepageHeading />
+        </HeadingContainer>
+      </Visibility>
 
-        {children}
-      </MainContainer>
-    )
-  }
+      {children}
+    </MainContainer>
+  )
 }
 
 DesktopContainer.propTypes = {
@@ -142,59 +139,54 @@ const MainPusher = styled(Sidebar.Pusher)`
   flex-direction: column;
 `
 
-class MobileContainer extends Component {
-  state = {}
+const MobileContainer = (children) => {
+  const [sidebarOpened, setSidebarOpened] = useState(false);
 
-  handlePusherClick = () => {
-    const { sidebarOpened } = this.state
-
-    if (sidebarOpened) this.setState({ sidebarOpened: false })
+  const handlePusherClick = () => {
+    if (sidebarOpened) {
+      setSidebarOpened(false);
+    }
   }
 
-  handleToggle = () => this.setState({ sidebarOpened: !this.state.sidebarOpened })
+  const handleToggle = () => setSidebarOpened(!sidebarOpened);
 
-  render() {
-    const { children } = this.props
-    const { sidebarOpened } = this.state
+  return (
+    <MainContainer maxWidth={Responsive.onlyMobile.maxWidth}>
+      <Sidebar.Pushable>
+        <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
+          <MenuLink to="/character">Character generator</MenuLink>
+          <MenuLink to="/spell">Spell generator</MenuLink>
+        </Sidebar>
 
-    return (
-      <MainContainer maxWidth={Responsive.onlyMobile.maxWidth}>
-        <Sidebar.Pushable>
-          <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
-            <MenuLink to="/character">Character generator</MenuLink>
-            <MenuLink to="/spell">Spell generator</MenuLink>
-          </Sidebar>
-
-          <MainPusher
-            dimmed={sidebarOpened}
-            onClick={this.handlePusherClick}
-            style={{ minHeight: '100vh' }}
+        <MainPusher
+          dimmed={sidebarOpened}
+          onClick={handlePusherClick}
+          style={{ minHeight: '100vh' }}
+        >
+          <Segment
+            inverted
+            textAlign='center'
+            style={{ minHeight: 200, padding: '1em 0em' }}
+            vertical
           >
-            <Segment
-              inverted
-              textAlign='center'
-              style={{ minHeight: 200, padding: '1em 0em' }}
-              vertical
-            >
-              <Container>
-                <Menu inverted pointing secondary size='large'>
-                  <Menu.Item onClick={this.handleToggle}>
-                    <Icon name='sidebar' />
-                  </Menu.Item>
-                  <Menu.Item position='right'>
-                    <LangSelector />
-                  </Menu.Item>
-                </Menu>
-              </Container>
-              <HomepageHeading mobile />
-            </Segment>
+            <Container>
+              <Menu inverted pointing secondary size='large'>
+                <Menu.Item onClick={handleToggle}>
+                  <Icon name='sidebar' />
+                </Menu.Item>
+                <Menu.Item position='right'>
+                  <LangSelector />
+                </Menu.Item>
+              </Menu>
+            </Container>
+            <HomepageHeading mobile />
+          </Segment>
 
-            {children}
-          </MainPusher>
-        </Sidebar.Pushable>
-      </MainContainer>
-    )
-  }
+          {children}
+        </MainPusher>
+      </Sidebar.Pushable>
+    </MainContainer>
+  )
 }
 
 MobileContainer.propTypes = {
