@@ -82,7 +82,7 @@ const MainContainer = styled(Responsive)`
 `
 const DesktopContainer = ({ children }) => {
 
-  const [fixed, setFixed] = useState(true);
+  const [fixed, setFixed] = useState(false);
 
   const hideFixedMenu = () => setFixed(false)
   const showFixedMenu = () => setFixed(true)
