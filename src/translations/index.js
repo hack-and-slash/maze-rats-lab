@@ -1,8 +1,9 @@
+import en from './en.js'
 import ptbr from './pt-BR.js'
 
 export const Resources = {
     "en": {
-        translation: (k) => k
+        translation: en
     },
     "pt-BR": {
         translation: ptbr

@@ -11,18 +11,15 @@ i18n
     whitelist: ['en', 'pt-BR'],
     fallbackLng: 'en',
     resources: Resources,
-    saveMissing: true,
     interpolation: {
       escapeValue: false,
     },
+    appendNamespaceToMissingKey: false,
     detection: {
       order: ['querystring', 'localStorage', 'navigator'],
       lookupQuerystring: 'lang',
       lookupLocalStorage: 'i18nextLang',
     },
-    react: {
-      nsMode: 'fallback',
-    }
   });
 
 export default i18n;

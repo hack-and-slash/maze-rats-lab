@@ -9,19 +9,17 @@ import {
   Menu,
   Responsive,
   Segment,
-  Select,
   Sidebar,
   Visibility,
 } from 'semantic-ui-react'
+import LanguageSelector from '../../components/LanguageSelector'
 import { withRouter, Route, Link } from 'react-router-dom'
 import PrettyPrintJson from '../../PrettyPrintJson'
 import Generator from '../../services/generator.js'
 import { useTranslation } from 'react-i18next/hooks';
-import { Trans } from 'react-i18next';
+import Translated from '../../services/Translated';
 
 const HomepageHeading = ({ mobile }) => {
-
-  const [ , i18n] = useTranslation();
 
   const Title = styled(Header)`
     @font-face {
@@ -48,9 +46,9 @@ const HomepageHeading = ({ mobile }) => {
         Maze Rats Lab
       </Title>
       <SubTitle as='h2' inverted mobile={mobile}>
-        <Trans i18n={i18n}>
+        <Translated i18nKey="slogan">
           The <strike>lazy</strike> pragmatic player toolbox.
-        </Trans>
+        </Translated>
       </SubTitle>
     </Container>
   )
@@ -69,31 +67,6 @@ const MenuLink = withRouter(({to, location, children}) => {
       </Menu.Item>
     )
 })
-
-const LangSelect = styled(Select)`
-  font-size: 10;
-  width:"200px";
-`
-
-const LangSelector = () => {
-    const [t, i18n] = useTranslation();
-
-    const changeLanguage = lang => {
-      i18n.changeLanguage(lang);
-    };
-
-    const countryOptions = [
-        { value: 'pt-BR', flag: 'br', text: t('Brazillian Portuguese') },
-        { value: 'en', flag: 'us', text: t('English') }
-    ]
-    return (
-      <LangSelect
-        onChange={(e, { value }) => changeLanguage(value)}
-        placeholder={t('Change language')}
-        options={countryOptions}
-      />
-    )
-}
 
 const MainContainer = styled(Responsive)`
   display: flex;
@@ -135,10 +108,10 @@ const DesktopContainer = ({ children }) => {
             size='large'
           >
             <Container>
-              <MenuLink to="/character">{t('Character generator')}</MenuLink>
-              <MenuLink to="/spell">{t('Spell generator')}</MenuLink>
+              <MenuLink to="/character">{t('section.character-generator')}</MenuLink>
+              <MenuLink to="/spell">{t('section.spell-generator')}</MenuLink>
               <Menu.Item position='right'>
-                <LangSelector />
+                <LanguageSelector />
               </Menu.Item>
             </Container>
           </Menu>
@@ -178,8 +151,8 @@ const MobileContainer = ({ children }) => {
     <MainContainer maxWidth={Responsive.onlyMobile.maxWidth}>
       <Sidebar.Pushable>
         <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
-          <MenuLink to="/character">{t('Character generator')}</MenuLink>
-          <MenuLink to="/spell">{t('Spell generator')}</MenuLink>
+          <MenuLink to="/character">{t('section.character-generator')}</MenuLink>
+          <MenuLink to="/spell">{t('section.spell-generator')}</MenuLink>
         </Sidebar>
 
         <MainPusher
@@ -199,7 +172,7 @@ const MobileContainer = ({ children }) => {
                   <Icon name='sidebar' />
                 </Menu.Item>
                 <Menu.Item position='right'>
-                  <LangSelector />
+                  <LanguageSelector />
                 </Menu.Item>
               </Menu>
             </Container>
@@ -246,7 +219,7 @@ const PageLayout = () => {
           return (
             <Fragment>
               <Header as='h3' style={{ fontSize: '2em' }}>
-                {t('Character generator')}
+                {t('section.character-generator')}
               </Header>
               <PrettyPrintJson data={new Generator(null, i18n.language).character()} />
             </Fragment>
@@ -256,7 +229,7 @@ const PageLayout = () => {
           return (
             <Fragment>
               <Header as='h3' style={{ fontSize: '2em' }}>
-                {t('Spell generator')}
+                {t('section.spell-generator')}
               </Header>
               <PrettyPrintJson data={new Generator(null, i18n.language).spell()} />
             </Fragment>
