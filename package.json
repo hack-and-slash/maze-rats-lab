@@ -4,9 +4,12 @@
   "license": "(MIT OR Apache-2.0)",
   "homepage": "https://hack-and-slash.github.io/maze-rats-lab",
   "dependencies": {
+    "i18next": "^12.0.0",
+    "i18next-browser-languagedetector": "^2.2.3",
     "random-js": "^1.0.8",
     "react": "^16.7.0-alpha.0",
     "react-dom": "^16.7.0-alpha.0",
+    "react-i18next": "^8.3.6",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5",
     "semantic-ui-css": "^2.4.1",

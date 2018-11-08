@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import PageLayout from './containers/PageLayout'
+import PageLayout from './containers/PageLayout';
 
-class App extends Component {
-  render() {
-    return (
+
+const App = () => {
+  return (
       <PageLayout className="App"/>
-    );
-  }
+  );
 }
 
 export default App;

@@ -16,27 +16,30 @@ import {
 import { withRouter, Route, Link } from 'react-router-dom'
 import PrettyPrintJson from '../../PrettyPrintJson'
 import Generator from '../../services/generator.js'
-
- const Title = styled(Header)`
- @font-face {
-    font-family: 'WickedGrit';
-    src: url(${WickedGrit}) format('truetype');
-    
-    font-style: normal;
-  }
-  font-family: WickedGrit;
-  font-size: ${(props) => props.mobile ? '2em' : '4em'};
-  font-weight: normal;
-  margin-bottom: 0;
-  margin-top: ${(props) => props.mobile ? '1.5em' : '3em'};
- `
+import { useTranslation } from 'react-i18next/hooks';
+import { Trans } from 'react-i18next';
 
 const HomepageHeading = ({ mobile }) => {
 
+  const [ , i18n] = useTranslation();
+
+  const Title = styled(Header)`
+    @font-face {
+      font-family: 'WickedGrit';
+      src: url(${WickedGrit}) format('truetype');
+      font-style: normal;
+    }
+    font-family: WickedGrit;
+    font-size: ${(props) => props.mobile ? '2.5em' : '4em'};
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: ${(props) => props.mobile ? '1.5em' : '3em'};
+ `
+
   const SubTitle = styled(Header)`
-    font-size: ${(props) => props.mobile ? '1.5em' : '1.7em'};
-    font-weight: 'normal';
-    margin-top: ${(props) => props.mobile ? '0.5em' : '1.5em'};
+    font-size: ${(props) => props.mobile ? '1em' : '1.5em'};
+    font-weight: lighter;
+    margin-top: ${(props) => props.mobile ? '0.5em' : '0em'};
   `
 
   return (
@@ -45,7 +48,9 @@ const HomepageHeading = ({ mobile }) => {
         Maze Rats Lab
       </Title>
       <SubTitle as='h2' inverted mobile={mobile}>
+        <Trans i18n={i18n}>
           The <strike>lazy</strike> pragmatic player toolbox.
+        </Trans>
       </SubTitle>
     </Container>
   )
@@ -65,15 +70,30 @@ const MenuLink = withRouter(({to, location, children}) => {
     )
 })
 
-const LangSelector = withRouter(({history, location}) => {
+const LangSelect = styled(Select)`
+  font-size: 10;
+  width:"200px";
+`
+
+const LangSelector = () => {
+    const [t, i18n] = useTranslation();
+
+    const changeLanguage = lang => {
+      i18n.changeLanguage(lang);
+    };
+
     const countryOptions = [
-        { key: 'ptbr', value: 'ptbr', flag: 'br', text: 'Brazillian Portuguese' },
-        { key: 'en', value: 'en', flag: 'us', text: 'English' }
+        { value: 'pt-BR', flag: 'br', text: t('Brazillian Portuguese') },
+        { value: 'en', flag: 'us', text: t('English') }
     ]
     return (
-        <Select style={{ fontSize: 10, width:"200px" }} onChange={(e,{k, value}) => history.push(location.pathname+'?lang='+value)} placeholder='Change language' options={countryOptions} />
+      <LangSelect
+        onChange={(e, { value }) => changeLanguage(value)}
+        placeholder={t('Change language')}
+        options={countryOptions}
+      />
     )
-})
+}
 
 const MainContainer = styled(Responsive)`
   display: flex;
@@ -86,6 +106,8 @@ const DesktopContainer = ({ children }) => {
 
   const hideFixedMenu = () => setFixed(false)
   const showFixedMenu = () => setFixed(true)
+
+  const [t] = useTranslation();
 
   const HeadingContainer = styled(Segment)`
     min-height: 300;
@@ -113,8 +135,8 @@ const DesktopContainer = ({ children }) => {
             size='large'
           >
             <Container>
-              <MenuLink to="/character">Character generator</MenuLink>
-              <MenuLink to="/spell">Spell generator</MenuLink>
+              <MenuLink to="/character">{t('Character generator')}</MenuLink>
+              <MenuLink to="/spell">{t('Spell generator')}</MenuLink>
               <Menu.Item position='right'>
                 <LangSelector />
               </Menu.Item>
@@ -139,7 +161,9 @@ const MainPusher = styled(Sidebar.Pusher)`
   flex-direction: column;
 `
 
-const MobileContainer = (children) => {
+const MobileContainer = ({ children }) => {
+  const [t] = useTranslation();
+
   const [sidebarOpened, setSidebarOpened] = useState(false);
 
   const handlePusherClick = () => {
@@ -154,8 +178,8 @@ const MobileContainer = (children) => {
     <MainContainer maxWidth={Responsive.onlyMobile.maxWidth}>
       <Sidebar.Pushable>
         <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
-          <MenuLink to="/character">Character generator</MenuLink>
-          <MenuLink to="/spell">Spell generator</MenuLink>
+          <MenuLink to="/character">{t('Character generator')}</MenuLink>
+          <MenuLink to="/spell">{t('Spell generator')}</MenuLink>
         </Sidebar>
 
         <MainPusher
@@ -212,37 +236,37 @@ const ContentContainer = styled(Container)`
 const Footer = styled(Segment)`
   padding: '5em 0em'
 ` 
-const PageLayout = () => (
-  <ResponsiveContainer>
-    <ContentContainer text>
-      <Route path="/character" render={(props) => {
-        let searchParams = new URLSearchParams(props.location.search)
-        let lang = searchParams.get("lang") || "en"
-        return (
-          <Fragment>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              Character generator
-            </Header>
-            <PrettyPrintJson data={new Generator(null, lang).character()} />
-          </Fragment>
-        )
-      }} />
-      <Route path="/spell" render={(props) => {
-        let searchParams = new URLSearchParams(props.location.search)
-        let lang = searchParams.get("lang") || "en"
-        return (
-          <Fragment>
-            <Header as='h3' style={{ fontSize: '2em' }}>
-              Spell generator
-            </Header>
-            <PrettyPrintJson data={new Generator(null, lang).spell()} />
-          </Fragment>
-        )
-      }} />
-    </ContentContainer>
-    <Footer inverted vertical>
-      
-    </Footer>
-  </ResponsiveContainer>
-)
+const PageLayout = () => {
+  const [t, i18n] = useTranslation();
+
+  return (
+    <ResponsiveContainer>
+      <ContentContainer text>
+        <Route path="/character" render={(props) => {
+          return (
+            <Fragment>
+              <Header as='h3' style={{ fontSize: '2em' }}>
+                {t('Character generator')}
+              </Header>
+              <PrettyPrintJson data={new Generator(null, i18n.language).character()} />
+            </Fragment>
+          )
+        }} />
+        <Route path="/spell" render={(props) => {
+          return (
+            <Fragment>
+              <Header as='h3' style={{ fontSize: '2em' }}>
+                {t('Spell generator')}
+              </Header>
+              <PrettyPrintJson data={new Generator(null, i18n.language).spell()} />
+            </Fragment>
+          )
+        }} />
+      </ContentContainer>
+      <Footer inverted vertical>
+        
+      </Footer>
+    </ResponsiveContainer>
+  )
+}
 export default PageLayout
