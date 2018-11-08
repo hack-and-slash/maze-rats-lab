@@ -3,6 +3,7 @@
 A set of tools for the ~~lazy~~ pragmatic [Maze Rats](https://questingbeast.itch.io/maze-rats) players/DMs:
 
 * Character generator
+* Spell generator
 
 Available on https://hack-and-slash.github.io/maze-rats-lab/
 
