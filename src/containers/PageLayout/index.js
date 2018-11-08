@@ -17,7 +17,9 @@ import { withRouter, Route, Link } from 'react-router-dom'
 import PrettyPrintJson from '../../PrettyPrintJson'
 import Generator from '../../services/generator.js'
 import { useTranslation } from 'react-i18next/hooks';
-import Translated from '../../services/Translated';
+import Translated from '../../components/Translated';
+import CharacterGenerator from '../CharacterGenerator';
+import SpellGenerator from '../SpellGenerator';
 
 const HomepageHeading = ({ mobile }) => {
 
@@ -210,31 +212,11 @@ const Footer = styled(Segment)`
   padding: '5em 0em'
 ` 
 const PageLayout = () => {
-  const [t, i18n] = useTranslation();
-
   return (
     <ResponsiveContainer>
       <ContentContainer text>
-        <Route path="/character" render={(props) => {
-          return (
-            <Fragment>
-              <Header as='h3' style={{ fontSize: '2em' }}>
-                {t('section.character-generator')}
-              </Header>
-              <PrettyPrintJson data={new Generator(null, i18n.language).character()} />
-            </Fragment>
-          )
-        }} />
-        <Route path="/spell" render={(props) => {
-          return (
-            <Fragment>
-              <Header as='h3' style={{ fontSize: '2em' }}>
-                {t('section.spell-generator')}
-              </Header>
-              <PrettyPrintJson data={new Generator(null, i18n.language).spell()} />
-            </Fragment>
-          )
-        }} />
+        <Route path="/character" component={CharacterGenerator} />
+        <Route path="/spell" component={SpellGenerator} />
       </ContentContainer>
       <Footer inverted vertical>
         
