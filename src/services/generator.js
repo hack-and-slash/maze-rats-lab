@@ -217,16 +217,16 @@ class Generator {
 
     monsterTrait(){
         let trait = Data[this.lang].monsters.traits[this.d6()][this.d6()]
-        trait = (trait.includes("EtherealElements"))? this.monsterElement("etherealElement")+"-like":trait
-        trait = (trait.includes("PhysicalElement"))? this.monsterElement("physicalElement")+"-like":trait
+        trait = (trait.includes("ETHEREAL_ELEMENT"))? this.monsterElement("etherealElement")+"-like":trait
+        trait = (trait.includes("PHYSICAL_ELEMENT"))? this.monsterElement("physicalElement")+"-like":trait
 
         return trait
     }
 
     monsterAbility(){
         let ability = Data[this.lang].monsters.abilities[this.d6()][this.d6()]
-        ability = (ability.includes("EtherealEffect"))? this.monsterElement("etherealEffect"):ability
-        ability = (ability.includes("PhysicalEffect"))? this.monsterElement("physicalEffect"):ability
+        ability = (ability.includes("ETHEREAL_EFFECT"))? this.monsterElement("etherealEffect"):ability
+        ability = (ability.includes("PHYSICAL_EFFECT"))? this.monsterElement("physicalEffect"):ability
         
         return ability
     }
@@ -241,11 +241,11 @@ class Generator {
 
     monsterWeakness(){
         let weakness = Data[this.lang].monsters.weakness[this.d6()][this.d6()]
-        weakness = (weakness.includes("PhysicalElement"))? this.monsterElement("physicalElement"):weakness
+        weakness = (weakness.includes("PHYSICAL_EFFECT"))? this.monsterElement("physicalEffect"):weakness
         weakness = (weakness.includes("|ADD_ITEM"))? this.weapons():weakness
-        weakness = (weakness.includes("Methods"))? this.methods():weakness
-        weakness = (weakness.includes("Insanities"))? this.insanities():weakness
-        weakness = (weakness.includes("Val. Materials"))? this.valMaterials():weakness
+        weakness = (weakness.includes("METHODS"))? this.methods():weakness
+        weakness = (weakness.includes("INSANITIES"))? this.insanities():weakness
+        weakness = (weakness.includes("VAL_MATERIALS"))? this.valMaterials():weakness
         
         return weakness
     }
