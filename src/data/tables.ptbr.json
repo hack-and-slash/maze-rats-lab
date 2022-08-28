@@ -1050,8 +1050,8 @@
         "2" : {
             "1" : "Excelente mentiroso",
             "2" : "Extremamente rico",
-            "3" : "Líder de facção",
-            "4" : "Membro da facção",
+            "3" : "Líder de facção|ADD_FACTION",
+            "4" : "Membro da ffacçãoaction|ADD_FACTION",
             "5" : "Temido",
             "6" : "Base fortificada"
         },
@@ -1090,77 +1090,77 @@
     },
     "liabilities": {
         "1": {
-            "1": "Addiction",
-            "2": "Alcoholic",
-            "3": "Corrupt ally",
-            "4": "Coward",
-            "5": "Decadent",
-            "6": "Forbidden love"
+            "1": "Vício",
+            "2": "Alcoólico",
+            "3": "Aliado corrupto",
+            "4": "Covarde",
+            "5": "Decadente",
+            "6": "Amor proibido"
         },
         "2": {
-            "1": "Gambler",
-            "2": "Glutton",
-            "3": "Greedy",
-            "4": "Heretic",
-            "5": "Huge debts",
-            "6": "Imposter"
+            "1": "Jogador",
+            "2": "Glutão",
+            "3": "ganancioso",
+            "4": "Herege",
+            "5": "Dívidas enormes",
+            "6": "Impostor"
         },
         "3": {
-            "1": "Insanity",
-            "2": "Jealous",
-            "3": "Leaves evidence",
-            "4": "Many enemies",
-            "5": "Misinformed",
-            "6": "Money trail"
+            "1": "Insanidade",
+            "2": "Inveja",
+            "3": "Deixa evidência",
+            "4": "Muitos inimigos",
+            "5": "Desinformado",
+            "6": "Rastro de dinheiro"
         },
         "4": {
-            "1": "Narcissist",
-            "2": "Needs medicine",
-            "3": "OCD",
-            "4": "Paranoid",
-            "5": "Partyer",
-            "6": "Poor equipment"
+            "1": "Narcisista",
+            "2": "Precisa de remédio",
+            "3": "TOC",
+            "4": "Paranóico",
+            "5": "Parte",
+            "6": "Equipamento ruim"
         },
         "5": {
-            "1": "Protective",
-            "2": "Scandalous",
-            "3": "Softhearted",
-            "4": "Strict routines",
-            "5": "Superstitious",
-            "6": "Suspicious"
+            "1": "Protetor",
+            "2": "Escândalo",
+            "3": "De coração mole",
+            "4": "Rotinas estritas",
+            "5": "Supersticioso",
+            "6": "Suspeito"
         },
         "6": {
-            "1": "Temper",
-            "2": "Trusting",
-            "3": "Vulnerable base",
-            "4": "Wanted",
-            "5": "Weak-willed",
-            "6": "Widely despised"
+            "1": "Temperatura",
+            "2": "Confiar",
+            "3": "Base vulnerável",
+            "4": "Procurado",
+            "5": "De vontade fraca",
+            "6": "Amplamente desprezado"
         }
     },
     "goals": {
         "1": {
-            "1": "A better life",
-            "2": "Acceptance",
-            "3": "Acquire Items",
-            "4": "Craft item",
-            "5": "Destroy faction",
-            "6": "Destroy item"
+            "1": "Uma vida melhor",
+            "2": "Aceitação",
+            "3": "Adquirir Itens",
+            "4": "Artigo de artesanato",
+            "5": "Destruir facção|ADD_FACTION",
+            "6": "Destruir item"
         },
         "2": {
             "1": "Enlightenment",
             "2": "Fame",
-            "3": "Found faction",
+            "3": "Found facção|ADD_FACTION",
             "4": "Freedom",
             "5": "Glory",
             "6": "Impress NPC"
         },
         "3": {
             "1": "Infamy",
-            "2": "Infiltrate faction",
+            "2": "Infiltrate facção|ADD_FACTION",
             "3": "Justice",
             "4": "Kidnap NPC",
-            "5": "Lead faction",
+            "5": "Lead facção|ADD_FACTION",
             "6": "Leaning"
         },
         "4": {
@@ -1173,15 +1173,15 @@
         },
         "5": {
             "1": "Resolve dispute",
-            "2": "Restore faction",
+            "2": "Restore facção|ADD_FACTION",
             "3": "Reveal a secret",
             "4": "Revenge",
-            "5": "Sabotage faction",
+            "5": "Sabotage facção|ADD_FACTION",
             "6": "Serve a deity"
         },
         "6": {
             "1": "Serve evil",
-            "2": "Serve faction",
+            "2": "Serve facção|ADD_FACTION",
             "3": "Serve ideology",
             "4": "Serve leader",
             "5": "Serve the needy",
@@ -1544,13 +1544,13 @@
                     "3": "Awaken being",
                     "4": "Collect artifacts",
                     "5": "Construct base",
-                    "6": "Control faction"
+                    "6": "Control facção|ADD_FACTION"
                 },
                 "2": {
                     "1": "Control Politics",
                     "2": "Create artifact",
-                    "3": "Create monster",
-                    "4": "Defeat faction",
+                    "3": "Criar  monstro|ADD_MONSTER",
+                    "4": "Derrotar facção|ADD_FACTION",
                     "5": "Defend boarders",
                     "6": "Defend leader"
                 },
@@ -1566,7 +1566,7 @@
                     "1": "Exchange goods",
                     "2": "Hear rumors",
                     "3": "Indulge tastes",
-                    "4": "Infiltrate faction",
+                    "4": "Infiltrate facção|ADD_FACTION",
                     "5": "Map the wild",
                     "6": "Overthrow order"
                 },

@@ -115,14 +115,21 @@ class Generator {
         return Data[this.lang].liabilities[this.d6()][this.d6()]
     }
 
+    removeAddTag(stringIn){
+        return stringIn.substring(0,stringIn.indexOf("|"))
+    }
+
+
     goals(){
         let goals = {}
         goals.value = Data[this.lang].goals[this.d6()][this.d6()]
-        if(goals.value.includes("faction") ) {
+        if(goals.value.toUpperCase().includes("|ADD_FACTION")) {
+            goals.value = this.removeAddTag(goals.value)
             goals.faction = this.factions()
-        } else if(goals.value.includes("item")){
+        } else if(goals.value.toUpperCase().includes("|ADD_ITEM")){
+            goals.value = this.removeAddTag(goals.value)
             goals.item = this.item()
-        } else if(goals.value.includes("NPC")){
+        } else if(goals.value.toUpperCase().includes("NPC")){
             goals.npc = this.npc()
         }
 
@@ -142,7 +149,8 @@ class Generator {
         secret.name = Data[this.lang].secrets[this.d6()][this.d6()] 
         if(secret.name.includes('NPC')){
             secret.npc = this.npc()
-        } else if(secret.name.includes('Misfortune')){
+        } else if(secret.name.includes('|ADD_MISFORTUNE')){
+            secret.name =this.removeAddTag(secret.name)
             secret.misfortune = this.misfortunes()
         }
         return secret
@@ -161,11 +169,13 @@ class Generator {
         faction.type = Data[this.lang].factions[this.d6()][this.d6()]
         faction.trait = Data[this.lang].factions.traits[this.d6()][this.d6()]
         faction.goal = Data[this.lang].factions.goals[this.d6()][this.d6()]
-        if(faction.goal.includes("faction")){ //:TODO check for language
+        if(faction.goal.toUpperCase().includes("|ADD_FACTION")) { 
+            faction.goal = this.removeAddTag(faction.goal)
             faction.goal.faction = this.factions()
         }
-        if(faction.goal.includes("monster")){
-            faction.goal.faction = this.monsters()
+        if(faction.goal.toUpperCase().includes("|ADD_MONSTER")) {
+            faction.goal = this.removeAddTag(faction.goal)
+            faction.goal.monster = this.monsters()
         }
         return faction
     }
@@ -232,7 +242,7 @@ class Generator {
     monsterWeakness(){
         let weakness = Data[this.lang].monsters.weakness[this.d6()][this.d6()]
         weakness = (weakness.includes("PhysicalElement"))? this.monsterElement("physicalElement"):weakness
-        weakness = (weakness.includes("Weapon Items"))? this.weapons():weakness
+        weakness = (weakness.includes("|ADD_ITEM"))? this.weapons():weakness
         weakness = (weakness.includes("Methods"))? this.methods():weakness
         weakness = (weakness.includes("Insanities"))? this.insanities():weakness
         weakness = (weakness.includes("Val. Materials"))? this.valMaterials():weakness
@@ -243,44 +253,69 @@ class Generator {
     monsterElement(component){
         return Data[this.lang].spellComponent[component][this.d6()][this.d6()]
     }
-
-    formatLists(){
-        const fruits  =[
-            "Alchemy","Blackmail","Bluster","Bribery","Bullying","Bureaucracy",
-            "Charm","Commerce","Cronies","Debate","Deceit","Deduction",
-            "Eloquence","Espionage","Fast-talking","FAvors","Hard work","Humor",
-            "Investigation","Legal maneuvers","Manipulation","Misdirection","Money","Nagging",
-            "Negotiations","Persistence","Piety","Preparation","Quick wit","Research",
-            "Rumors","Sabotage","Teamwork","Theft","Threats","Violence"
-        ]
+ // formatLists(){
+    //     const fruits  =[
+    //         "Alchemy","Blackmail","Bluster","Bribery","Bullying","Bureaucracy",
+    //         "Charm","Commerce","Cronies","Debate","Deceit","Deduction",
+    //         "Eloquence","Espionage","Fast-talking","FAvors","Hard work","Humor",
+    //         "Investigation","Legal maneuvers","Manipulation","Misdirection","Money","Nagging",
+    //         "Negotiations","Persistence","Piety","Preparation","Quick wit","Research",
+    //         "Rumors","Sabotage","Teamwork","Theft","Threats","Violence"
+    //     ]
         
-        const values = fruits.sort()
-        let outerIdx = 1;
-        let idx = 0;
-        let jsonVal = '{'
-            values.forEach(v => {
-                idx++;
-                if(idx===1) jsonVal = jsonVal.concat("\n").concat('"' + outerIdx).concat('": {')
-                console.log('"' +idx+'":"' + v + '"')
-                jsonVal = jsonVal.concat('"' +idx+'":"' + v + '"')
-                if(idx===6) {
-                    idx = 0;
-                    if(outerIdx===6)
-                        jsonVal = jsonVal.concat("}")
-                    else
-                        jsonVal = jsonVal.concat("},") 
+    //     const values = fruits.sort()
+    //     let outerIdx = 1;
+    //     let idx = 0;
+    //     let jsonVal = '{'
+    //         values.forEach(v => {
+    //             idx++;
+    //             if(idx===1) jsonVal = jsonVal.concat("\n").concat('"' + outerIdx).concat('": {')
+    //             console.log('"' +idx+'":"' + v + '"')
+    //             jsonVal = jsonVal.concat('"' +idx+'":"' + v + '"')
+    //             if(idx===6) {
+    //                 idx = 0;
+    //                 if(outerIdx===6)
+    //                     jsonVal = jsonVal.concat("}")
+    //                 else
+    //                     jsonVal = jsonVal.concat("},") 
 
-                    outerIdx++;
-                }else{
-                    jsonVal = jsonVal.concat(",")
-                };
+    //                 outerIdx++;
+    //             }else{
+    //                 jsonVal = jsonVal.concat(",")
+    //             };
                 
-            });
-        console.log(jsonVal  + "}")
-    }
+    //         });
+    //     console.log(jsonVal  + "}")
+    // }
+    //     ]
+        
+    //     const values = fruits.sort()
+    //     let outerIdx = 1;
+    //     let idx = 0;
+    //     let jsonVal = '{'
+    //         values.forEach(v => {
+    //             idx++;
+    //             if(idx===1) jsonVal = jsonVal.concat("\n").concat('"' + outerIdx).concat('": {')
+    //             console.log('"' +idx+'":"' + v + '"')
+    //             jsonVal = jsonVal.concat('"' +idx+'":"' + v + '"')
+    //             if(idx===6) {
+    //                 idx = 0;
+    //                 if(outerIdx===6)
+    //                     jsonVal = jsonVal.concat("}")
+    //                 else
+    //                     jsonVal = jsonVal.concat("},") 
+
+    //                 outerIdx++;
+    //             }else{
+    //                 jsonVal = jsonVal.concat(",")
+    //             };
+                
+    //         });
+    //     console.log(jsonVal  + "}")
+    // }
 
     monsters() {
-        this.formatLists()
+        //this.formatLists()
         const hitDie = this.d6()
         const armorDie = this.diceRoll(5)+5
         const monsterBase = {1: "Aerial", 2:"Terrestrial", 3:"Aquatic"}[this.diceRoll(3)]

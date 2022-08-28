@@ -1086,8 +1086,8 @@
       "2": {
         "1": "Excellent liar",
         "2": "Extremely rich",
-        "3": "Faction-leader",
-        "4": "Faction-member",
+        "3": "Faction-leader|ADD_FACTION",
+        "4": "Faction-member|ADD_FACTION",
         "5": "Feared",
         "6": "Fortified base"
       },
@@ -1178,25 +1178,25 @@
       "1": {
         "1": "A better life",
         "2": "Acceptance",
-        "3": "Acquire Items",
-        "4": "Craft item",
-        "5": "Destroy faction",
-        "6": "Destroy item"
+        "3": "Acquire Items|ADD_ITEM",
+        "4": "Craft item|ADD_ITEM",
+        "5": "Destroy faction|ADD_FACTION",
+        "6": "Destroy item|ADD_ITEM"
       },
       "2": {
         "1": "Enlightenment",
         "2": "Fame",
-        "3": "Found faction",
+        "3": "Found faction|ADD_FACTION",
         "4": "Freedom",
         "5": "Glory",
         "6": "Impress NPC"
       },
       "3": {
         "1": "Infamy",
-        "2": "Infiltrate faction",
+        "2": "Infiltrate faction|ADD_FACTION",
         "3": "Justice",
         "4": "Kidnap NPC",
-        "5": "Lead faction",
+        "5": "Lead faction|ADD_FACTION",
         "6": "Leaning"
       },
       "4": {
@@ -1209,15 +1209,15 @@
       },
       "5": {
         "1": "Resolve dispute",
-        "2": "Restore faction",
+        "2": "Restore faction|ADD_FACTION",
         "3": "Reveal a secret",
         "4": "Revenge",
-        "5": "Sabotage faction",
+        "5": "Sabotage faction|ADD_FACTION",
         "6": "Serve a deity"
       },
       "6": {
         "1": "Serve evil",
-        "2": "Serve faction",
+        "2": "Serve faction|ADD_FACTION",
         "3": "Serve ideology",
         "4": "Serve leader",
         "5": "Serve the needy",
@@ -1354,7 +1354,7 @@
         "2": "Low born",
         "3": "Married",
         "4": "Mind-controlled",
-        "5": "Misfortune",
+        "5": "Misfortune|ADD_MISFORTUNE",
         "6": "Monster hunter"
       },
       "5": {
@@ -1580,13 +1580,13 @@
           "3": "Awaken being",
           "4": "Collect artifacts",
           "5": "Construct base",
-          "6": "Control faction"
+          "6": "Control faction|ADD_FACTION"
         },
         "2": {
           "1": "Control Politics",
           "2": "Create artifact",
-          "3": "Create monster",
-          "4": "Defeat faction",
+          "3": "Create monster|ADD_MONSTER",
+          "4": "Defeat faction|ADD_FACTION",
           "5": "Defend boarders",
           "6": "Defend leader"
         },
@@ -1602,7 +1602,7 @@
           "1": "Exchange goods",
           "2": "Hear rumors",
           "3": "Indulge tastes",
-          "4": "Infiltrate faction",
+          "4": "Infiltrate faction|ADD_FACTION",
           "5": "Map the wild",
           "6": "Overthrow order"
         },
@@ -2050,7 +2050,7 @@
           "3": "Holy Water",
           "4": "Home Cooking",
           "5": "Insanities",
-          "6": "Items"
+          "6": "Items|ADD_ITEM"
         },
         "4": {
           "1": "Methods",
@@ -2072,7 +2072,7 @@
           "1": "True Name",
           "2": "Val. Materials",
           "3": "Weak Spot",
-          "4": "Weapon Items",
+          "4": "Weapon Items|ADD_ITEM",
           "5": "Wormwood",
           "6": "PhysicalElement"
         }
@@ -2217,7 +2217,7 @@
             }
           }
       },
-      "meathods":{
+      "methods":{
         "1": {
           "1": "Alchemy",
           "2": "Blackmail",
