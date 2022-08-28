@@ -409,53 +409,155 @@
         }
     },
     "background": {
-        "1": {
-            "1": "Alquimista",
-            "2": "Príncipe mendigo",
-            "3": "Chantagista",
-            "4": "Caçador de recompensa",
-            "5": "Limpador de chaminés",
-            "6": "Cunhador"
+        "Civilized": {
+            "1": {
+                "1": "Acolyte",
+                "2": "Actor",
+                "3": "Apothecary",
+                "4": "Baker",
+                "5": "Barber",
+                "6": "Blacksmith"
+            },
+            "2": {
+                "1": "Brewer",
+                "2": "Bureaucrat",
+                "3": "Butcher",
+                "4": "Carpenter",
+                "5": "Clockmaker",
+                "6": "Courier"
+            },
+            "3": {
+                "1": "Courtier",
+                "2": "Diplomat",
+                "3": "Fishmonger",
+                "4": "Guard",
+                "5": "Haberdasher",
+                "6": "Innkeeper"
+            },
+            "4": {
+                "1": "Item-seller",
+                "2": "Jeweler",
+                "3": "Knight",
+                "4": "Locksmith",
+                "5": "Mason",
+                "6": "Miller"
+            },
+            "5": {
+                "1": "Musician",
+                "2": "Noble",
+                "3": "Painter",
+                "4": "Priest",
+                "5": "Scholar",
+                "6": "Scribe"
+            },
+            "6": {
+                "1": "Sculptor",
+                "2": "Shipwright",
+                "3": "Soldier",
+                "4": "Tailor",
+                "5": "Taxidermist",
+                "6": "Wigmaker"
+            }
         },
-        "2": {
-            "1": "Receptador",
-            "2": "Falsificador",
-            "3": "Cultista",
-            "4": "Batedor de carteiras",
-            "5": "Cobrador",
-            "6": "Desertor"
+        "Underworld": {
+            "1": {
+                "1": "Alquimista",
+                "2": "Príncipe mendigo",
+                "3": "Chantagista",
+                "4": "Caçador de recompensa",
+                "5": "Limpador de chaminés",
+                "6": "Cunhador"
+            },
+            "2": {
+                "1": "Receptador",
+                "2": "Falsificador",
+                "3": "Cultista",
+                "4": "Batedor de carteiras",
+                "5": "Cobrador",
+                "6": "Desertor"
+            },
+            "3": {
+                "1": "Fence",
+                "2": "Vidente",
+                "3": "Escravo remador",
+                "4": "Jogador",
+                "5": "Coveiro",
+                "6": "Carrasco"
+            },
+            "4": {
+                "1": "Cavaleiro andante",
+                "2": "Salteador de estrada",
+                "3": "Arrombador",
+                "4": "Sequestrador",
+                "5": "Profeta louco",
+                "6": "Charlatão"
+            },
+            "5": {
+                "1": "Mascate",
+                "2": "Lutador de rua",
+                "3": "Envenenador",
+                "4": "Caçador de ratos",
+                "5": "Escrivão",
+                "6": "Mercenário"
+            },
+            "6": {
+                "1": "Escravo",
+                "2": "Contrabandista",
+                "3": "Artista de rua",
+                "4": "Tatuador",
+                "5": "Menor abandonado",
+                "6": "Agiota"
+            }
         },
-        "3": {
-            "1": "Fence",
-            "2": "Vidente",
-            "3": "Escravo remador",
-            "4": "Jogador",
-            "5": "Coveiro",
-            "6": "Carrasco"
-        },
-        "4": {
-            "1": "Cavaleiro andante",
-            "2": "Salteador de estrada",
-            "3": "Arrombador",
-            "4": "Sequestrador",
-            "5": "Profeta louco",
-            "6": "Charlatão"
-        },
-        "5": {
-            "1": "Mascate",
-            "2": "Lutador de rua",
-            "3": "Envenenador",
-            "4": "Caçador de ratos",
-            "5": "Escrivão",
-            "6": "Mercenário"
-        },
-        "6": {
-            "1": "Escravo",
-            "2": "Contrabandista",
-            "3": "Artista de rua",
-            "4": "Tatuador",
-            "5": "Menor abandonado",
-            "6": "Agiota"
+        "Wilderness" :{
+            "1": {
+                "1": "Apiarist",
+                "2": "Bandit",
+                "3": "Caravan Guard",
+                "4": "Caravaneer",
+                "5": "Druid",
+                "6": "Exile"
+            },
+            "2": {
+                "1": "Explorer",
+                "2": "Farmer",
+                "3": "Fisherman",
+                "4": "Forager",
+                "5": "Fugitive",
+                "6": "Hedge Wizard"
+            },
+            "3": {
+                "1": "Hermit",
+                "2": "Hunter",
+                "3": "Messenger",
+                "4": "Minstrel",
+                "5": "Monk",
+                "6": "Monster Hunter"
+            },
+            "4": {
+                "1": "Outlander",
+                "2": "Tinker",
+                "3": "Pilgrim",
+                "4": "Poacher",
+                "5": "Raider",
+                "6": "Ranger"
+            },
+            "5": {
+                "1": "Sage",
+                "2": "Scavenger",
+                "3": "Scout",
+                "4": "Shepherd",
+                "5": "Seer",
+                "6": "Surveyor"
+            },
+            "6": {
+                "1": "Tinker",
+                "2": "Tomb Raider",
+                "3": "Trader",
+                "4": "Trapper",
+                "5": "Witch",
+                "6": "Woodcutter"
+            }
         }
     },
     "clothing": {
@@ -935,5 +1037,555 @@
             "1": ["etherealForm", "physicalElement"],
             "2": ["etherealElement", "etherealEffect"]
         }
-    }
+    },
+    "assets" : {
+        "1" : {
+            "1" : "Autoridade",
+            "2" : "Evita detecção",
+            "3" : "Chamada de favores",
+            "4" : "Encantador",
+            "5" : "Cozinha os livros",
+            "6" : "Apaga evidências"
+        },
+        "2" : {
+            "1" : "Excelente mentiroso",
+            "2" : "Extremamente rico",
+            "3" : "Líder de facção",
+            "4" : "Membro da facção",
+            "5" : "Temido",
+            "6" : "Base fortificada"
+        },
+        "3": {
+            "1": "Lindo",
+            "2": "Ouve rumores",
+            "3": "Família enorme",
+            "4": "Grande biblioteca",
+            "5": "Imitador",
+            "6": "Interrogador"
+        },
+        "4": {
+            "1": "Conhece um cara",
+            "2": "Sabe um caminho",
+            "3": "Lava dinheiro",
+            "4": "Aprendido",
+            "5": "celebridade local",
+            "6": "Conhecimento local"
+        },
+        "5": {
+            "1": "Ajudantes leais",
+            "2": "Oráculo mediano",
+            "3": "Nada a perder",
+            "4": "Possui os guardas",
+            "5": "Cônjuge poderoso",
+            "6": "Compra equipamentos"
+        },
+        "6": {
+            "1": "Puxa as cordas", 
+            "2": "Laboratório secreto", 
+            "3": "Contrabando de células", 
+            "4": "Mercadorias contrabandeadas", 
+            "5": "Rede de espionagem", 
+            "6": "Herói de guerra"
+        }
+    },
+    "liabilities": {
+        "1": {
+            "1": "Addiction",
+            "2": "Alcoholic",
+            "3": "Corrupt ally",
+            "4": "Coward",
+            "5": "Decadent",
+            "6": "Forbidden love"
+        },
+        "2": {
+            "1": "Gambler",
+            "2": "Glutton",
+            "3": "Greedy",
+            "4": "Heretic",
+            "5": "Huge debts",
+            "6": "Imposter"
+        },
+        "3": {
+            "1": "Insanity",
+            "2": "Jealous",
+            "3": "Leaves evidence",
+            "4": "Many enemies",
+            "5": "Misinformed",
+            "6": "Money trail"
+        },
+        "4": {
+            "1": "Narcissist",
+            "2": "Needs medicine",
+            "3": "OCD",
+            "4": "Paranoid",
+            "5": "Partyer",
+            "6": "Poor equipment"
+        },
+        "5": {
+            "1": "Protective",
+            "2": "Scandalous",
+            "3": "Softhearted",
+            "4": "Strict routines",
+            "5": "Superstitious",
+            "6": "Suspicious"
+        },
+        "6": {
+            "1": "Temper",
+            "2": "Trusting",
+            "3": "Vulnerable base",
+            "4": "Wanted",
+            "5": "Weak-willed",
+            "6": "Widely despised"
+        }
+    },
+    "goals": {
+        "1": {
+            "1": "A better life",
+            "2": "Acceptance",
+            "3": "Acquire Items",
+            "4": "Craft item",
+            "5": "Destroy faction",
+            "6": "Destroy item"
+        },
+        "2": {
+            "1": "Enlightenment",
+            "2": "Fame",
+            "3": "Found faction",
+            "4": "Freedom",
+            "5": "Glory",
+            "6": "Impress NPC"
+        },
+        "3": {
+            "1": "Infamy",
+            "2": "Infiltrate faction",
+            "3": "Justice",
+            "4": "Kidnap NPC",
+            "5": "Lead faction",
+            "6": "Leaning"
+        },
+        "4": {
+            "1": "Locate NPC",
+            "2": "Love",
+            "3": "Mastery",
+            "4": "Power",
+            "5": "Research locations",
+            "6": "Rescue NPC"
+        },
+        "5": {
+            "1": "Resolve dispute",
+            "2": "Restore faction",
+            "3": "Reveal a secret",
+            "4": "Revenge",
+            "5": "Sabotage faction",
+            "6": "Serve a deity"
+        },
+        "6": {
+            "1": "Serve evil",
+            "2": "Serve faction",
+            "3": "Serve ideology",
+            "4": "Serve leader",
+            "5": "Serve the needy",
+            "6": "Wealth"
+        }
+    },
+    "misfortunes": {
+        "1": {
+            "1": "Abandoned",
+            "2": "Addicted",
+            "3": "Arrested",
+            "4": "Blackmailed",
+            "5": "Burgled",
+            "6": "Challenged"
+        },
+        "2": {
+            "1": "Condemned",
+            "2": "Crippled",
+            "3": "Cursed",
+            "4": "Defrauded",
+            "5": "Demoted",
+            "6": "Depressed"
+        },
+        "3": {
+            "1": "Discredited",
+            "2": "Dismissed",
+            "3": "Disowned",
+            "4": "Exiled",
+            "5": "Famished",
+            "6": "Forgotten"
+        },
+        "4": {
+            "1": "Framed",
+            "2": "Haunted",
+            "3": "Humiliated",
+            "4": "Impoverished",
+            "5": "Kidnapped",
+            "6": "Lost"
+        },
+        "5": {
+            "1": "Mobbed",
+            "2": "Mutilated",
+            "3": "Overworked",
+            "4": "Poisoned",
+            "5": "Pursued",
+            "6": "Rejected"
+        },
+        "6": {
+            "1": "Replaces",
+            "2": "Robbed",
+            "3": "Sick",
+            "4": "Sued",
+            "5": "Suspected",
+            "6": "Transformed"
+        }
+    },
+    "missions": {
+        "1": {
+            "1": "Apprehend",
+            "2": "Assassinate",
+            "3": "Blackmail",
+            "4": "Burgle",
+            "5": "Chart",
+            "6": "Convince"
+        },
+        "2": {
+            "1": "Deface",
+            "2": "Defraud",
+            "3": "Deliver",
+            "4": "Destroy",
+            "5": "Discredit",
+            "6": "Escort"
+        },
+        "3": {
+            "1": "Exfiltrate",
+            "2": "Extort",
+            "3": "Follow",
+            "4": "Frame",
+            "5": "Impersonate",
+            "6": "Impress"
+        },
+        "4": {
+            "1": "Infiltrate",
+            "2": "Interrogate",
+            "3": "Investigate",
+            "4": "Kidnap",
+            "5": "Locate",
+            "6": "Plant"
+        },
+        "5": {
+            "1": "Protect",
+            "2": "Raid",
+            "3": "Replace",
+            "4": "Retrieve",
+            "5": "Rob",
+            "6": "Ruin"
+        },
+        "6": {
+            "1": "Sabotage",
+            "2": "Smuggle",
+            "3": "Surveil",
+            "4": "Take Over",
+            "5": "Terrorize",
+            "6": "Threaten"
+        }
+    },
+    "secrets": {
+        "1": {
+            "1": "Addicted",
+            "2": "Artificial",
+            "3": "Assassin",
+            "4": "Bankrupt",
+            "5": "Beholden",
+            "6": "Counterspy"
+        },
+        "2": {
+            "1": "Cultist",
+            "2": "Demigod",
+            "3": "Evil lineage",
+            "4": "Exile",
+            "5": "Fence",
+            "6": "Fugitive"
+        },
+        "3": {
+            "1": "Ghost",
+            "2": "Has a child",
+            "3": "Heretic",
+            "4": "High born",
+            "5": "Huge fortune",
+            "6": "Illusion"
+        },
+        "4": {
+            "1": "Insurrectionist",
+            "2": "Low born",
+            "3": "Married",
+            "4": "Mind-controlled",
+            "5": "Misfortune",
+            "6": "Monster hunter"
+        },
+        "5": {
+            "1": "Non-human",
+            "2": "NPC",
+            "3": "Polygamist",
+            "4": "Protects relic",
+            "5": "Scandalous birth",
+            "6": "Secret police"
+        },
+        "6": {
+            "1": "Serial killer",
+            "2": "Smuggler",
+            "3": "Spy",
+            "4": "Time traveler",
+            "5": "Transformed",
+            "6": "War criminal"
+        }
+    },
+    "reputations": {
+        "1": {
+            "1": "Ambitious",
+            "2": "Authoritative",
+            "3": "Boor",
+            "4": "Borrower",
+            "5": "Celebrity",
+            "6": "Charitable"
+        },
+        "2": {
+            "1": "Cheat",
+            "2": "Dangerous",
+            "3": "Entertainer",
+            "4": "Gossip",
+            "5": "Hardworker",
+            "6": "Holy"
+        },
+        "3": {
+            "1": "Honest",
+            "2": "Hypochondriac",
+            "3": "Idiot",
+            "4": "Influential",
+            "5": "Layabout",
+            "6": "Leader"
+        },
+        "4": {
+            "1": "Misanthrope",
+            "2": "Miser",
+            "3": "Neighborly",
+            "4": "Nutjob",
+            "5": "Obnoxious",
+            "6": "Overeducated"
+        },
+        "5": {
+            "1": "Partier",
+            "2": "Pious",
+            "3": "Proper",
+            "4": "Prophet of doom",
+            "5": "Repulsive",
+            "6": "Respected"
+        },
+        "6": {
+            "1": "Riffraff",
+            "2": "Scandalous",
+            "3": "Slime ball",
+            "4": "Terrifying",
+            "5": "Weirdo",
+            "6": "Wise"
+        }
+    },
+    "hobbies": {
+        "1": {
+            "1": "Archaeology",
+            "2": "Art collecting",
+            "3": "Bad fiction",
+            "4": "Calligraphy",
+            "5": "Card games",
+            "6": "Clockwork"
+        },
+        "2": {
+            "1": "Collecting cats",
+            "2": "Cuisine",
+            "3": "Dark lore",
+            "4": "Dog breeding",
+            "5": "Embroidery",
+            "6": "Exercise"
+        },
+        "3": {
+            "1": "Falconry",
+            "2": "Fashion",
+            "3": "Fishing",
+            "4": "Foreign cultures",
+            "5": "Gardening",
+            "6": "History"
+        },
+        "4": {
+            "1": "Horseracing",
+            "2": "Hunting",
+            "3": "Instrument",
+            "4": "Knitting",
+            "5": "Lawn games",
+            "6": "Mountaineering"
+        },
+        "5": {
+            "1": "Opera",
+            "2": "Painting",
+            "3": "Poetry",
+            "4": "Puzzle-solving",
+            "5": "Riddling",
+            "6": "Science"
+        },
+        "6": {
+            "1": "Sculpture",
+            "2": "Sketching",
+            "3": "Smoking",
+            "4": "Theater",
+            "5": "Weaving",
+            "6": "Whiskey"
+        }
+    },
+    "factions": {
+        "1": {
+            "1": "Art movement",
+            "2": "Beggar's guild",
+            "3": "Black market",
+            "4": "Brotherhood",
+            "5": "City guard",
+            "6": "Conspiracy"
+        },
+        "2": {
+            "1": "Craft guild",
+            "2": "Crime family",
+            "3": "Crime ring",
+            "4": "Dark cult",
+            "5": "Explorer's club",
+            "6": "Free company"
+        },
+        "3": {
+            "1": "Gourmand club",
+            "2": "Heist crew",
+            "3": "Heretical sect",
+            "4": "High council",
+            "5": "Hired killers",
+            "6": "Local militia"
+        },
+        "4": {
+            "1": "National church",
+            "2": "Noble house",
+            "3": "Outlander clan",
+            "4": "Outlaw gang",
+            "5": "Political party",
+            "6": "Religious order"
+        },
+        "5": {
+            "1": "Religious sect",
+            "2": "Resistance",
+            "3": "Royal army",
+            "4": "Royal house",
+            "5": "Scholar's circle",
+            "6": "Secret society"
+        },
+        "6": {
+            "1": "Spy network",
+            "2": "Street artists",
+            "3": "Street gang",
+            "4": "Street musicians",
+            "5": "Theater troupe",
+            "6": "Trade company"
+        },
+        "traits": {
+            "1": {
+                "1": "Bankrupt",
+                "2": "Bureaucratic",
+                "3": "Charitable",
+                "4": "Confused",
+                "5": "Connected",
+                "6": "Corrupt"
+            },
+            "2": {
+                "1": "Decadent",
+                "2": "Decaying",
+                "3": "Delusional",
+                "4": "Divided",
+                "5": "Dwindling",
+                "6": "Efficient"
+            },
+            "3": {
+                "1": "Esoteric",
+                "2": "Expanding",
+                "3": "Haunted",
+                "4": "Incompetent",
+                "5": "Incorruptible",
+                "6": "Insane"
+            },
+            "4": {
+                "1": "Insular",
+                "2": "Manipulative",
+                "3": "Martial",
+                "4": "Personality",
+                "5": "Pious",
+                "6": "Popular"
+            },
+            "5": {
+                "1": "Righteous",
+                "2": "Ruthless",
+                "3": "Secret",
+                "4": "Subversive",
+                "5": "Suppressed",
+                "6": "Threatened"
+            },
+            "6": {
+                "1": "Thriving",
+                "2": "Unpopular",
+                "3": "Up-and-coming",
+                "4": "Wealthy",
+                "5": "Well-prepared",
+                "6": "Xenophobic"
+            }
+        },
+        "goals": {
+                "1": {
+                    "1": "Advise leader",
+                    "2": "Avoid detection",
+                    "3": "Awaken being",
+                    "4": "Collect artifacts",
+                    "5": "Construct base",
+                    "6": "Control faction"
+                },
+                "2": {
+                    "1": "Control Politics",
+                    "2": "Create artifact",
+                    "3": "Create monster",
+                    "4": "Defeat faction",
+                    "5": "Defend boarders",
+                    "6": "Defend leader"
+                },
+                "3": {
+                    "1": "Destroy artifacts",
+                    "2": "Destroy being",
+                    "3": "Destroy villain",
+                    "4": "Enforce law",
+                    "5": "Enrich members",
+                    "6": "Entertain"
+                },
+                "4": {
+                    "1": "Exchange goods",
+                    "2": "Hear rumors",
+                    "3": "Indulge tastes",
+                    "4": "Infiltrate faction",
+                    "5": "Map the wild",
+                    "6": "Overthrow order"
+                },
+                "5": {
+                    "1": "Preserve lineage",
+                    "2": "Preserve lore",
+                    "3": "Produce goods",
+                    "4": "Promote arts",
+                    "5": "Promote craft",
+                    "6": "Purge traitors"
+                },
+                "6": {
+                    "1": "Sell services",
+                    "2": "Share knowledge",
+                    "3": "Spread beliefs",
+                    "4": "Summon evil",
+                    "5": "Survive",
+                    "6": "Transport goods"
+                }
+            }
+        }
 }

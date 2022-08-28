@@ -14,11 +14,11 @@ import {
 } from 'semantic-ui-react'
 import LanguageSelector from '../../components/LanguageSelector'
 import { withRouter, Route, Link } from 'react-router-dom'
-import PrettyPrintJson from '../../PrettyPrintJson'
-import Generator from '../../services/generator.js'
 import { useTranslation } from 'react-i18next/hooks';
 import Translated from '../../components/Translated';
 import CharacterGenerator from '../CharacterGenerator';
+import MonsterGenerator from '../MonsterGenerator';
+import NPCGenerator from '../NPCGenerator';
 import SpellGenerator from '../SpellGenerator';
 
 const HomepageHeading = ({ mobile }) => {
@@ -111,6 +111,8 @@ const DesktopContainer = ({ children }) => {
           >
             <Container>
               <MenuLink to="/character">{t('section.character-generator')}</MenuLink>
+              <MenuLink to="/monster">{t('section.monster-generator')}</MenuLink>
+              <MenuLink to="/npc">{t('section.npc-generator')}</MenuLink>
               <MenuLink to="/spell">{t('section.spell-generator')}</MenuLink>
               <Menu.Item position='right'>
                 <LanguageSelector />
@@ -154,6 +156,8 @@ const MobileContainer = ({ children }) => {
       <Sidebar.Pushable>
         <Sidebar as={Menu} animation='uncover' inverted vertical visible={sidebarOpened}>
           <MenuLink to="/character">{t('section.character-generator')}</MenuLink>
+          <MenuLink to="/monster">{t('section.monster-generator')}</MenuLink>
+          <MenuLink to="/npc">{t('section.npc-generator')}</MenuLink>
           <MenuLink to="/spell">{t('section.spell-generator')}</MenuLink>
         </Sidebar>
 
@@ -216,6 +220,8 @@ const PageLayout = () => {
     <ResponsiveContainer>
       <ContentContainer text>
         <Route path="/character" component={CharacterGenerator} />
+        <Route path="/monster" component={MonsterGenerator} />
+        <Route path="/npc" component={NPCGenerator} />
         <Route path="/spell" component={SpellGenerator} />
       </ContentContainer>
       <Footer inverted vertical>
