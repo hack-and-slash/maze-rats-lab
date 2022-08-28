@@ -195,7 +195,12 @@ class Generator {
     }
 
     insanities(){
-        return Data[this.lang].insanities[this.d6()][this.d6()]
+        let insanity = Data[this.lang].insanities[this.d6()][this.d6()]
+        if(insanity.includes("|PERSONALITY")){
+            insanity.replace("|PERSONALITY", this.personality())
+        }
+         
+        return 
     }
 
     valMaterials(){
@@ -241,7 +246,7 @@ class Generator {
 
     monsterWeakness(){
         let weakness = Data[this.lang].monsters.weakness[this.d6()][this.d6()]
-        weakness = (weakness.includes("PHYSICAL_EFFECT"))? this.monsterElement("physicalEffect"):weakness
+        weakness = (weakness.includes("PHYSICAL_ELEMENT"))? this.monsterElement("physicalElement"):weakness
         weakness = (weakness.includes("|ADD_ITEM"))? this.weapons():weakness
         weakness = (weakness.includes("METHODS"))? this.methods():weakness
         weakness = (weakness.includes("INSANITIES"))? this.insanities():weakness
