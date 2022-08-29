@@ -1186,7 +1186,7 @@
       "2": {
         "1": "Enlightenment",
         "2": "Fame",
-        "3": "Found facção|ADD_FACTION",
+        "3": "Facção encontrada|ADD_FACTION",
         "4": "Freedom",
         "5": "Glory",
         "6": "Impress NPC"
@@ -1209,7 +1209,7 @@
       },
       "5": {
         "1": "Resolve dispute",
-        "2": "Restore facção|ADD_FACTION",
+        "2": "Restaurar facção|ADD_FACTION",
         "3": "Reveal a secret",
         "4": "Revenge",
         "5": "Sabotage facção|ADD_FACTION",
