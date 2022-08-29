@@ -7,6 +7,8 @@ export default {
     },
     "section": {
         "character-generator":  "Character generator",
+        "monster-generator":"Monster Generator",
+        "npc-generator":"NPC Generator",
         "spell-generator": "Spell generator"
     },
     "slogan": "The <1>lazy</1> pragmatic player toolbox",

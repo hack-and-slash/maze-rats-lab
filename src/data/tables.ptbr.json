@@ -1,939 +1,2270 @@
 {
     "names": {
-        "male": {
-            "1": {
-                "1": "Balthazar",
-                "2": "Basílio",
-                "3": "Beltrame",
-                "4": "Blaxton",
-                "5": "Chadwick",
-                "6": "Clóvis"
-            },
-            "2": {
-                "1": "Destrian",
-                "2": "Ellis",
-                "3": "Erasmo",
-                "4": "Fausto",
-                "5": "Finn",
-                "6": "Fitzhugh"
-            },
-            "3": {
-                "1": "Floriano",
-                "2": "Fox",
-                "3": "Godwin",
-                "4": "Hannibal",
-                "5": "Jasper",
-                "6": "Jiles"
-            },
-            "4": {
-                "1": "Júlio",
-                "2": "Leopoldo",
-                "3": "Merrick",
-                "4": "Mortimer",
-                "5": "Ogden",
-                "6": "Órion"
-            },
-            "5": {
-                "1": "Osvaldo",
-                "2": "Percival",
-                "3": "Peregrine",
-                "4": "Quentin",
-                "5": "Redmaine",
-                "6": "Reinhold"
-            },
-            "6": {
-                "1": "Sílas",
-                "2": "Stilton",
-                "3": "Stratford",
-                "4": "Tenpiece",
-                "5": "Waverly",
-                "6": "Webster"
-            }
+      "male": {
+        "1": {
+          "1": "Balthazar",
+          "2": "Basílio",
+          "3": "Beltrame",
+          "4": "Blaxton",
+          "5": "Chadwick",
+          "6": "Clóvis"
         },
-        "female": {
-            "1": {
-                "1": "Adelaide",
-                "2": "Alma",
-                "3": "Anna",
-                "4": "Beatriz",
-                "5": "Bianca",
-                "6": "Cleopha"
-            },
-            "2": {
-                "1": "Clover",
-                "2": "Constance",
-                "3": "Damaris",
-                "4": "Daphne",
-                "5": "Demona",
-                "6": "Elsbeth"
-            },
-            "3": {
-                "1": "Esme",
-                "2": "Fern",
-                "3": "Hester",
-                "4": "Hipácia",
-                "5": "Jessamine",
-                "6": "Jilly"
-            },
-            "4": {
-                "1": "Margot",
-                "2": "Melissa",
-                "3": "Minerva",
-                "4": "Odete",
-                "5": "Olga",
-                "6": "Orchid"
-            },
-            "5": {
-                "1": "Pepper",
-                "2": "Phoebe",
-                "3": "Piety",
-                "4": "Poppy",
-                "5": "Silence",
-                "6": "Sybil"
-            },
-            "6": {
-                "1": "Trillby",
-                "2": "Tuesday",
-                "3": "Úrsula",
-                "4": "Viviane",
-                "5": "Wendy",
-                "6": "Zora"
-            }
+        "2": {
+          "1": "Destrian",
+          "2": "Ellis",
+          "3": "Erasmo",
+          "4": "Fausto",
+          "5": "Finn",
+          "6": "Fitzhugh"
+        },
+        "3": {
+          "1": "Floriano",
+          "2": "Fox",
+          "3": "Godwin",
+          "4": "Hannibal",
+          "5": "Jasper",
+          "6": "Jiles"
+        },
+        "4": {
+          "1": "Júlio",
+          "2": "Leopoldo",
+          "3": "Merrick",
+          "4": "Mortimer",
+          "5": "Ogden",
+          "6": "Órion"
+        },
+        "5": {
+          "1": "Osvaldo",
+          "2": "Percival",
+          "3": "Peregrine",
+          "4": "Quentin",
+          "5": "Redmaine",
+          "6": "Reinhold"
+        },
+        "6": {
+          "1": "Sílas",
+          "2": "Stilton",
+          "3": "Stratford",
+          "4": "Tenpiece",
+          "5": "Waverly",
+          "6": "Webster"
         }
+      },
+      "female": {
+        "1": {
+          "1": "Adelaide",
+          "2": "Alma",
+          "3": "Anna",
+          "4": "Beatriz",
+          "5": "Bianca",
+          "6": "Cleopha"
+        },
+        "2": {
+          "1": "Clover",
+          "2": "Constance",
+          "3": "Damaris",
+          "4": "Daphne",
+          "5": "Demona",
+          "6": "Elsbeth"
+        },
+        "3": {
+          "1": "Esme",
+          "2": "Fern",
+          "3": "Hester",
+          "4": "Hipácia",
+          "5": "Jessamine",
+          "6": "Jilly"
+        },
+        "4": {
+          "1": "Margot",
+          "2": "Melissa",
+          "3": "Minerva",
+          "4": "Odete",
+          "5": "Olga",
+          "6": "Orchid"
+        },
+        "5": {
+          "1": "Pepper",
+          "2": "Phoebe",
+          "3": "Piety",
+          "4": "Poppy",
+          "5": "Silence",
+          "6": "Sybil"
+        },
+        "6": {
+          "1": "Trillby",
+          "2": "Tuesday",
+          "3": "Úrsula",
+          "4": "Viviane",
+          "5": "Wendy",
+          "6": "Zora"
+        }
+      }
     },
     "surnames": {
-        "highborn": {
-            "1": {
-                "1": "Belvedere",
-                "2": "Bithesea",
-                "3": "Calaver",
-                "4": "Carvolo",
-                "5": "De Rippe",
-                "6": "Droll"
-            },
-            "2": {
-                "1": "Dunlow",
-                "2": "Edevane",
-                "3": "Erelong",
-                "4": "Febland",
-                "5": "Fernsby",
-                "6": "Fisk"
-            },
-            "3": {
-                "1": "Gastrell",
-                "2": "Girdwood",
-                "3": "Gorgon",
-                "4": "Grimeson",
-                "5": "Gruger",
-                "6": "Hitheryon"
-            },
-            "4": {
-                "1": "La Marque",
-                "2": "Malmora",
-                "3": "Miter",
-                "4": "Oblington",
-                "5": "Onymous",
-                "6": "Phillifent"
-            },
-            "5": {
-                "1": "Portendorfer",
-                "2": "Romatet",
-                "3": "Rothery",
-                "4": "Skorbeck",
-                "5": "Slora",
-                "6": "Southwark"
-            },
-            "6": {
-                "1": "Stavish",
-                "2": "Vandermeer",
-                "3": "Wellbelove",
-                "4": "Westergren",
-                "5": "Wexley",
-                "6": "Wilberforce"
-            }
+      "highborn": {
+        "1": {
+          "1": "Belvedere",
+          "2": "Bithesea",
+          "3": "Calaver",
+          "4": "Carvolo",
+          "5": "De Rippe",
+          "6": "Droll"
         },
-        "lowborn": {
-            "1": {
-                "1": "Barrow",
-                "2": "Beetleman",
-                "3": "Berrycloth",
-                "4": "Birdwhistle",
-                "5": "Bobich",
-                "6": "Chips"
-            },
-            "2": {
-                "1": "Coffin",
-                "2": "Crumpling",
-                "3": "Culpepper",
-                "4": "Dankworth",
-                "5": "Digworthy",
-                "6": "Dreggs"
-            },
-            "3": {
-                "1": "Gimble",
-                "2": "Graveworm",
-                "3": "Greelish",
-                "4": "Hardwick",
-                "5": "Hatman",
-                "6": "Hovel"
-            },
-            "4": {
-                "1": "Knibbs",
-                "2": "Midnighter",
-                "3": "Needle",
-                "4": "Nethercoat",
-                "5": "Pestle",
-                "6": "Relish"
-            },
-            "5": {
-                "1": "Rumbold",
-                "2": "Rummage",
-                "3": "Sallow",
-                "4": "Saltmarsh",
-                "5": "Silverless",
-                "6": "Skitter"
-            },
-            "6": {
-                "1": "Slee",
-                "2": "Slitherly",
-                "3": "Stoker",
-                "4": "Tarwater",
-                "5": "Tumbler",
-                "6": "Villin"
-            }
+        "2": {
+          "1": "Dunlow",
+          "2": "Edevane",
+          "3": "Erelong",
+          "4": "Febland",
+          "5": "Fernsby",
+          "6": "Fisk"
+        },
+        "3": {
+          "1": "Gastrell",
+          "2": "Girdwood",
+          "3": "Gorgon",
+          "4": "Grimeson",
+          "5": "Gruger",
+          "6": "Hitheryon"
+        },
+        "4": {
+          "1": "La Marque",
+          "2": "Malmora",
+          "3": "Miter",
+          "4": "Oblington",
+          "5": "Onymous",
+          "6": "Phillifent"
+        },
+        "5": {
+          "1": "Portendorfer",
+          "2": "Romatet",
+          "3": "Rothery",
+          "4": "Skorbeck",
+          "5": "Slora",
+          "6": "Southwark"
+        },
+        "6": {
+          "1": "Stavish",
+          "2": "Vandermeer",
+          "3": "Wellbelove",
+          "4": "Westergren",
+          "5": "Wexley",
+          "6": "Wilberforce"
         }
+      },
+      "lowborn": {
+        "1": {
+          "1": "Barrow",
+          "2": "Beetleman",
+          "3": "Berrycloth",
+          "4": "Birdwhistle",
+          "5": "Bobich",
+          "6": "Chips"
+        },
+        "2": {
+          "1": "Coffin",
+          "2": "Crumpling",
+          "3": "Culpepper",
+          "4": "Dankworth",
+          "5": "Digworthy",
+          "6": "Dreggs"
+        },
+        "3": {
+          "1": "Gimble",
+          "2": "Graveworm",
+          "3": "Greelish",
+          "4": "Hardwick",
+          "5": "Hatman",
+          "6": "Hovel"
+        },
+        "4": {
+          "1": "Knibbs",
+          "2": "Midnighter",
+          "3": "Needle",
+          "4": "Nethercoat",
+          "5": "Pestle",
+          "6": "Relish"
+        },
+        "5": {
+          "1": "Rumbold",
+          "2": "Rummage",
+          "3": "Sallow",
+          "4": "Saltmarsh",
+          "5": "Silverless",
+          "6": "Skitter"
+        },
+        "6": {
+          "1": "Slee",
+          "2": "Slitherly",
+          "3": "Stoker",
+          "4": "Tarwater",
+          "5": "Tumbler",
+          "6": "Villin"
+        }
+      }
     },
     "abilities": {
-        "1": {
-            "strength": 2,
-            "dexterity": 1,
-            "will": 0
-        },
-        "2": {
-            "strength": 2,
-            "dexterity": 0,
-            "will": 1
-        },
-        "3": {
-            "strength": 1,
-            "dexterity": 2,
-            "will": 0
-        },
-        "4": {
-            "strength": 0,
-            "dexterity": 2,
-            "will": 1
-        },
-        "5": {
-            "strength": 1,
-            "dexterity": 0,
-            "will": 2
-        },
-        "6": {
-            "strength": 0,
-            "dexterity": 1,
-            "will": 2
-        }
+      "1": {
+        "strength": 2,
+        "dexterity": 1,
+        "will": 0
+      },
+      "2": {
+        "strength": 2,
+        "dexterity": 0,
+        "will": 1
+      },
+      "3": {
+        "strength": 1,
+        "dexterity": 2,
+        "will": 0
+      },
+      "4": {
+        "strength": 0,
+        "dexterity": 2,
+        "will": 1
+      },
+      "5": {
+        "strength": 1,
+        "dexterity": 0,
+        "will": 2
+      },
+      "6": {
+        "strength": 0,
+        "dexterity": 1,
+        "will": 2
+      }
     },
     "features": {
-        "1": "Bônus de ataque (BA) +1",
-        "2": "Uma magia diária",
-        "3": "Nascido na Floresta: Rastrear, forragear, sobrevivência.",
-        "4": "Gatuno: Fazer gambiarras, destravar fechaduras e esvaziar bolsos.",
-        "5": "Alpinista de Telhados: Escalar, saltar e se equilibrar.",
-        "6": "Agente das Sombras: Mover-se silenciosamente, esconder-se nas sombras."
+      "1": "Bônus de ataque (BA) +1",
+      "2": "Uma magia diária",
+      "3": "Nascido na Floresta: Rastrear, forragear, sobrevivência.",
+      "4": "Gatuno: Fazer gambiarras, destravar fechaduras e esvaziar bolsos.",
+      "5": "Alpinista de Telhados: Escalar, saltar e se equilibrar.",
+      "6": "Agente das Sombras: Mover-se silenciosamente, esconder-se nas sombras."
     },
     "items": {
-        "1": {
-            "1": "Fragrância de animal",
-            "2": "Armadilha de urso",
-            "3": "Saco de dormir",
-            "4": "Estrepe",
-            "5": "Corrente (3m)",
-            "6": "Giz"
-        },
-        "2": {
-            "1": "Formão",
-            "2": "Pé de cabra",
-            "3": "Rede de pesca",
-            "4": "Bolas de gude",
-            "5": "Cola",
-            "6": "Gancho de escalada"
-        },
-        "3": {
-            "1": "Graxa",
-            "2": "Serra de arco",
-            "3": "Martelo",
-            "4": "Broca de mão",
-            "5": "Corneta",
-            "6": "Espigões de aço"
-        },
-        "4": {
-            "1": "Tenaz",
-            "2": "Lanterna e óleo",
-            "3": "Saco grande",
-            "4": "Gazuas (3)",
-            "5": "Algemas",
-            "6": "Remédio"
-        },
-        "5": {
-            "1": "Lima",
-            "2": "Rações (3)",
-            "3": "Corda (15m)",
-            "4": "Cabo de aço",
-            "5": "Pá",
-            "6": "Espelho de aço"
-        },
-        "6": {
-            "1": "Vara de 3m",
-            "2": "Pederneira",
-            "3": "Tocha",
-            "4": "Frasco de ácido",
-            "5": "Frasco de veneno",
-            "6": "Odre"
-        }
+      "1": {
+        "1": "Fragrância de animal",
+        "2": "Armadilha de urso",
+        "3": "Saco de dormir",
+        "4": "Estrepe",
+        "5": "Corrente (3m)",
+        "6": "Giz"
+      },
+      "2": {
+        "1": "Formão",
+        "2": "Pé de cabra",
+        "3": "Rede de pesca",
+        "4": "Bolas de gude",
+        "5": "Cola",
+        "6": "Gancho de escalada"
+      },
+      "3": {
+        "1": "Graxa",
+        "2": "Serra de arco",
+        "3": "Martelo",
+        "4": "Broca de mão",
+        "5": "Corneta",
+        "6": "Espigões de aço"
+      },
+      "4": {
+        "1": "Tenaz",
+        "2": "Lanterna e óleo",
+        "3": "Saco grande",
+        "4": "Gazuas (3)",
+        "5": "Algemas",
+        "6": "Remédio"
+      },
+      "5": {
+        "1": "Lima",
+        "2": "Rações (3)",
+        "3": "Corda (15m)",
+        "4": "Cabo de aço",
+        "5": "Pá",
+        "6": "Espelho de aço"
+      },
+      "6": {
+        "1": "Vara de 3m",
+        "2": "Pederneira",
+        "3": "Tocha",
+        "4": "Frasco de ácido",
+        "5": "Frasco de veneno",
+        "6": "Odre"
+      }
     },
     "weapons": {
-        "1": "Machaado",
-        "2": "Adaga",
-        "3": "Maça",
-        "4": "Espada curta",
-        "5": "mangual",
-        "6": "Lança de uma mão",
-        "7": "Lança de duas mãos",
-        "8": "Alabarda",
-        "9": "Espada longa",
-        "10": "Martelo de guerra",
-        "11": "Arco",
-        "12": "Besta",
-        "13": "Funda"
+      "1": "Machaado",
+      "2": "Adaga",
+      "3": "Maça",
+      "4": "Espada curta",
+      "5": "mangual",
+      "6": "Lança de uma mão",
+      "7": "Lança de duas mãos",
+      "8": "Alabarda",
+      "9": "Espada longa",
+      "10": "Martelo de guerra",
+      "11": "Arco",
+      "12": "Besta",
+      "13": "Funda"
     },
     "appearance": {
-        "1": {
-            "1": "Aquilino",
-            "2": "Atlético",
-            "3": "Troncudo",
-            "4": "Ossudo",
-            "5": "Musculoso",
-            "6": "Bruto"
-        },
-        "2": {
-            "1": "Pescoço grosso",
-            "2": "Escultural",
-            "3": "Alegre",
-            "4": "Corpulento",
-            "5": "Escarpado",
-            "6": "Delicado"
-        },
-        "3": {
-            "1": "Estriado",
-            "2": "Esquelético",
-            "3": "Deslumbrante",
-            "4": "Grisalho",
-            "5": "Abatido",
-            "6": "Atraente"
-        },
-        "4": {
-            "1": "Hediondo",
-            "2": "Frouxo",
-            "3": "Rechonchudo",
-            "4": "Trincado",
-            "5": "Rosado",
-            "6": "Magricela"
-        },
-        "5": {
-            "1": "Vigoroso",
-            "2": "Esguio",
-            "3": "Caído",
-            "4": "Maciço",
-            "5": "Queixo quadrado",
-            "6": "Estatuesco"
-        },
-        "6": {
-            "1": "Muito alto",
-            "2": "Em forma",
-            "3": "Envelhecido",
-            "4": "Esbelto",
-            "5": "Robusto",
-            "6": "Enrugado"
-        }
+      "1": {
+        "1": "Aquilino",
+        "2": "Atlético",
+        "3": "Troncudo",
+        "4": "Ossudo",
+        "5": "Musculoso",
+        "6": "Bruto"
+      },
+      "2": {
+        "1": "Pescoço grosso",
+        "2": "Escultural",
+        "3": "Alegre",
+        "4": "Corpulento",
+        "5": "Escarpado",
+        "6": "Delicado"
+      },
+      "3": {
+        "1": "Estriado",
+        "2": "Esquelético",
+        "3": "Deslumbrante",
+        "4": "Grisalho",
+        "5": "Abatido",
+        "6": "Atraente"
+      },
+      "4": {
+        "1": "Hediondo",
+        "2": "Frouxo",
+        "3": "Rechonchudo",
+        "4": "Trincado",
+        "5": "Rosado",
+        "6": "Magricela"
+      },
+      "5": {
+        "1": "Vigoroso",
+        "2": "Esguio",
+        "3": "Caído",
+        "4": "Maciço",
+        "5": "Queixo quadrado",
+        "6": "Estatuesco"
+      },
+      "6": {
+        "1": "Muito alto",
+        "2": "Em forma",
+        "3": "Envelhecido",
+        "4": "Esbelto",
+        "5": "Robusto",
+        "6": "Enrugado"
+      }
     },
     "physicalDetail": {
-        "1": {
-            "1": "Cicatrizes de ácido",
-            "2": "Cicatrizes de batalha",
-            "3": "Marca de nascença",
-            "4": "Cabelo trançado",
-            "5": "Marcado a ferro em brasa",
-            "6": "Nariz quebrado"
-        },
-        "2": {
-            "1": "Pele bronzeada",
-            "2": "Cicatrizes de queimadura",
-            "3": "Sobrancelhas espessas",
-            "4": "Cabelo cacheado",
-            "5": "Pele escura",
-            "6": "Dreadlocks"
-        },
-        "3": {
-            "1": "Sotaque exótico",
-            "2": "Cicatrizes de flagelação",
-            "3": "Sardas",
-            "4": "Dente de ouro",
-            "5": "Voz rouca",
-            "6": "Barba grande"
-        },
-        "4": {
-            "1": "Cabelo longo",
-            "2": "Cabelo embaraçado",
-            "3": "Orelha faltando",
-            "4": "Dente faltando",
-            "5": "Bigode",
-            "6": "Costeletas"
-        },
-        "5": {
-            "1": "Nove dedos",
-            "2": "Cabelo oleoso",
-            "3": "Um olho",
-            "4": "Pele pálida",
-            "5": "Piercings",
-            "6": "Sicatrizes de ritual"
-        },
-        "6": {
-            "1": "Pele amarelada",
-            "2": "Cabeça raspada",
-            "3": "Queimadura de sol",
-            "4": "Cabelo emaranhado",
-            "5": "Tatuagens",
-            "6": "Topete"
-        }
+      "1": {
+        "1": "Cicatrizes de ácido",
+        "2": "Cicatrizes de batalha",
+        "3": "Marca de nascença",
+        "4": "Cabelo trançado",
+        "5": "Marcado a ferro em brasa",
+        "6": "Nariz quebrado"
+      },
+      "2": {
+        "1": "Pele bronzeada",
+        "2": "Cicatrizes de queimadura",
+        "3": "Sobrancelhas espessas",
+        "4": "Cabelo cacheado",
+        "5": "Pele escura",
+        "6": "Dreadlocks"
+      },
+      "3": {
+        "1": "Sotaque exótico",
+        "2": "Cicatrizes de flagelação",
+        "3": "Sardas",
+        "4": "Dente de ouro",
+        "5": "Voz rouca",
+        "6": "Barba grande"
+      },
+      "4": {
+        "1": "Cabelo longo",
+        "2": "Cabelo embaraçado",
+        "3": "Orelha faltando",
+        "4": "Dente faltando",
+        "5": "Bigode",
+        "6": "Costeletas"
+      },
+      "5": {
+        "1": "Nove dedos",
+        "2": "Cabelo oleoso",
+        "3": "Um olho",
+        "4": "Pele pálida",
+        "5": "Piercings",
+        "6": "Sicatrizes de ritual"
+      },
+      "6": {
+        "1": "Pele amarelada",
+        "2": "Cabeça raspada",
+        "3": "Queimadura de sol",
+        "4": "Cabelo emaranhado",
+        "5": "Tatuagens",
+        "6": "Topete"
+      }
     },
     "background": {
+      "Civilized": {
         "1": {
-            "1": "Alquimista",
-            "2": "Príncipe mendigo",
-            "3": "Chantagista",
-            "4": "Caçador de recompensa",
-            "5": "Limpador de chaminés",
-            "6": "Cunhador"
+          "1": "Acolyte",
+          "2": "Actor",
+          "3": "Apothecary",
+          "4": "Baker",
+          "5": "Barber",
+          "6": "Blacksmith"
         },
         "2": {
-            "1": "Receptador",
-            "2": "Falsificador",
-            "3": "Cultista",
-            "4": "Batedor de carteiras",
-            "5": "Cobrador",
-            "6": "Desertor"
+          "1": "Brewer",
+          "2": "Bureaucrat",
+          "3": "Butcher",
+          "4": "Carpenter",
+          "5": "Clockmaker",
+          "6": "Courier"
         },
         "3": {
-            "1": "Fence",
-            "2": "Vidente",
-            "3": "Escravo remador",
-            "4": "Jogador",
-            "5": "Coveiro",
-            "6": "Carrasco"
+          "1": "Courtier",
+          "2": "Diplomat",
+          "3": "Fishmonger",
+          "4": "Guard",
+          "5": "Haberdasher",
+          "6": "Innkeeper"
         },
         "4": {
-            "1": "Cavaleiro andante",
-            "2": "Salteador de estrada",
-            "3": "Arrombador",
-            "4": "Sequestrador",
-            "5": "Profeta louco",
-            "6": "Charlatão"
+          "1": "Item-seller",
+          "2": "Jeweler",
+          "3": "Knight",
+          "4": "Locksmith",
+          "5": "Mason",
+          "6": "Miller"
         },
         "5": {
-            "1": "Mascate",
-            "2": "Lutador de rua",
-            "3": "Envenenador",
-            "4": "Caçador de ratos",
-            "5": "Escrivão",
-            "6": "Mercenário"
+          "1": "Musician",
+          "2": "Noble",
+          "3": "Painter",
+          "4": "Priest",
+          "5": "Scholar",
+          "6": "Scribe"
         },
         "6": {
-            "1": "Escravo",
-            "2": "Contrabandista",
-            "3": "Artista de rua",
-            "4": "Tatuador",
-            "5": "Menor abandonado",
-            "6": "Agiota"
+          "1": "Sculptor",
+          "2": "Shipwright",
+          "3": "Soldier",
+          "4": "Tailor",
+          "5": "Taxidermist",
+          "6": "Wigmaker"
         }
+      },
+      "Underworld": {
+        "1": {
+          "1": "Alquimista",
+          "2": "Príncipe mendigo",
+          "3": "Chantagista",
+          "4": "Caçador de recompensa",
+          "5": "Limpador de chaminés",
+          "6": "Cunhador"
+        },
+        "2": {
+          "1": "Receptador",
+          "2": "Falsificador",
+          "3": "Cultista",
+          "4": "Batedor de carteiras",
+          "5": "Cobrador",
+          "6": "Desertor"
+        },
+        "3": {
+          "1": "Fence",
+          "2": "Vidente",
+          "3": "Escravo remador",
+          "4": "Jogador",
+          "5": "Coveiro",
+          "6": "Carrasco"
+        },
+        "4": {
+          "1": "Cavaleiro andante",
+          "2": "Salteador de estrada",
+          "3": "Arrombador",
+          "4": "Sequestrador",
+          "5": "Profeta louco",
+          "6": "Charlatão"
+        },
+        "5": {
+          "1": "Mascate",
+          "2": "Lutador de rua",
+          "3": "Envenenador",
+          "4": "Caçador de ratos",
+          "5": "Escrivão",
+          "6": "Mercenário"
+        },
+        "6": {
+          "1": "Escravo",
+          "2": "Contrabandista",
+          "3": "Artista de rua",
+          "4": "Tatuador",
+          "5": "Menor abandonado",
+          "6": "Agiota"
+        }
+      },
+      "Wilderness": {
+        "1": {
+          "1": "Apiarist",
+          "2": "Bandit",
+          "3": "Caravan Guard",
+          "4": "Caravaneer",
+          "5": "Druid",
+          "6": "Exile"
+        },
+        "2": {
+          "1": "Explorer",
+          "2": "Farmer",
+          "3": "Fisherman",
+          "4": "Forager",
+          "5": "Fugitive",
+          "6": "Hedge Wizard"
+        },
+        "3": {
+          "1": "Hermit",
+          "2": "Hunter",
+          "3": "Messenger",
+          "4": "Minstrel",
+          "5": "Monk",
+          "6": "Monster Hunter"
+        },
+        "4": {
+          "1": "Outlander",
+          "2": "Tinker",
+          "3": "Pilgrim",
+          "4": "Poacher",
+          "5": "Raider",
+          "6": "Ranger"
+        },
+        "5": {
+          "1": "Sage",
+          "2": "Scavenger",
+          "3": "Scout",
+          "4": "Shepherd",
+          "5": "Seer",
+          "6": "Surveyor"
+        },
+        "6": {
+          "1": "Tinker",
+          "2": "Tomb Raider",
+          "3": "Trader",
+          "4": "Trapper",
+          "5": "Witch",
+          "6": "Woodcutter"
+        }
+      }
     },
     "clothing": {
-        "1": {
-            "1": "Antiga",
-            "2": "Rasgada de batalha",
-            "3": "Esfarrapada",
-            "4": "Manchada de sangue",
-            "5": "Cerimonial",
-            "6": "Anacrônica"
-        },
-        "2": {
-            "1": "Decadente",
-            "2": "Excêntrica",
-            "3": "Elegante",
-            "4": "Bordada",
-            "5": "Exótica",
-            "6": "Fashinable"
-        },
-        "3": {
-            "1": "Luxuosa",
-            "2": "Manchada de comida",
-            "3": "Formal",
-            "4": "Desgastada",
-            "5": "Fora de catálogo",
-            "6": "Extravagante"
-        },
-        "4": {
-            "1": "Encardida",
-            "2": "Alta costura",
-            "3": "Com laços",
-            "4": "Farda",
-            "5": "Manchada de lama",
-            "6": "Ornamentada"
-        },
-        "5": {
-            "1": "Larga",
-            "2": "Remendada",
-            "3": "Com padrões",
-            "4": "Perfumada",
-            "5": "Prática",
-            "6": "Amassada"
-        },
-        "6": {
-            "1": "Vulgar",
-            "2": "Chamuscada",
-            "3": "Brega",
-            "4": "Curta",
-            "5": "Manchada de vinho",
-            "6": "Desgastada"
-        }
+      "1": {
+        "1": "Antiga",
+        "2": "Rasgada de batalha",
+        "3": "Esfarrapada",
+        "4": "Manchada de sangue",
+        "5": "Cerimonial",
+        "6": "Anacrônica"
+      },
+      "2": {
+        "1": "Decadente",
+        "2": "Excêntrica",
+        "3": "Elegante",
+        "4": "Bordada",
+        "5": "Exótica",
+        "6": "Fashinable"
+      },
+      "3": {
+        "1": "Luxuosa",
+        "2": "Manchada de comida",
+        "3": "Formal",
+        "4": "Desgastada",
+        "5": "Fora de catálogo",
+        "6": "Extravagante"
+      },
+      "4": {
+        "1": "Encardida",
+        "2": "Alta costura",
+        "3": "Com laços",
+        "4": "Farda",
+        "5": "Manchada de lama",
+        "6": "Ornamentada"
+      },
+      "5": {
+        "1": "Larga",
+        "2": "Remendada",
+        "3": "Com padrões",
+        "4": "Perfumada",
+        "5": "Prática",
+        "6": "Amassada"
+      },
+      "6": {
+        "1": "Vulgar",
+        "2": "Chamuscada",
+        "3": "Brega",
+        "4": "Curta",
+        "5": "Manchada de vinho",
+        "6": "Desgastada"
+      }
     },
     "personality": {
-        "1": {
-            "1": "Amargo",
-            "2": "Corajoso",
-            "3": "Cauteloso",
-            "4": "Alegre",
-            "5": "Contrariador",
-            "6": "Covarde"
-        },
-        "2": {
-            "1": "Astuto",
-            "2": "Determinado",
-            "3": "Mimado",
-            "4": "Sociável",
-            "5": "Mal humorado",
-            "6": "Sem coração"
-        },
-        "3": {
-            "1": "Honrado",
-            "2": "Cabeça quente",
-            "3": "Curioso",
-            "4": "Irascível",
-            "5": "Alegre",
-            "6": "Sabichão"
-        },
-        "4": {
-            "1": "Preguiçoso",
-            "2": "Confiável",
-            "3": "Ameaçador",
-            "4": "Tolo",
-            "5": "Nervoso",
-            "6": "Protetor"
-        },
-        "5": {
-            "1": "Justo",
-            "2": "Rude",
-            "3": "Sarcástico",
-            "4": "Selvagem",
-            "5": "Intriguista",
-            "6": "Sereno"
-        },
-        "6": {
-            "1": "Espaçoso",
-            "2": "Estoico",
-            "3": "Teimoso",
-            "4": "Arrogante",
-            "5": "Suspeito",
-            "6": "Piadista"
-        }
+      "1": {
+        "1": "Amargo",
+        "2": "Corajoso",
+        "3": "Cauteloso",
+        "4": "Alegre",
+        "5": "Contrariador",
+        "6": "Covarde"
+      },
+      "2": {
+        "1": "Astuto",
+        "2": "Determinado",
+        "3": "Mimado",
+        "4": "Sociável",
+        "5": "Mal humorado",
+        "6": "Sem coração"
+      },
+      "3": {
+        "1": "Honrado",
+        "2": "Cabeça quente",
+        "3": "Curioso",
+        "4": "Irascível",
+        "5": "Alegre",
+        "6": "Sabichão"
+      },
+      "4": {
+        "1": "Preguiçoso",
+        "2": "Confiável",
+        "3": "Ameaçador",
+        "4": "Tolo",
+        "5": "Nervoso",
+        "6": "Protetor"
+      },
+      "5": {
+        "1": "Justo",
+        "2": "Rude",
+        "3": "Sarcástico",
+        "4": "Selvagem",
+        "5": "Intriguista",
+        "6": "Sereno"
+      },
+      "6": {
+        "1": "Espaçoso",
+        "2": "Estoico",
+        "3": "Teimoso",
+        "4": "Arrogante",
+        "5": "Suspeito",
+        "6": "Piadista"
+      }
     },
     "mannerism": {
-        "1": {
-            "1": "Anedotas",
-            "2": "Respiração profunda",
-            "3": "Risadinhas",
-            "4": "Fala pausada",
-            "5": "Oculto",
-            "6": "Voz grave"
-        },
-        "2": {
-            "1": "Fala pausadamente",
-            "2": "Articulado",
-            "3": "Linguagem com floreios",
-            "4": "Voz profunda",
-            "5": "Formal",
-            "6": "Hipnótico"
-        },
-        "3": {
-            "1": "Interrompe",
-            "2": "Lacônico",
-            "3": "Ri",
-            "4": "Pausas longas",
-            "5": "Voz melodiosa",
-            "6": "Monótono"
-        },
-        "4": {
-            "1": "Resmunga",
-            "2": "Narra",
-            "3": "Casual demains",
-            "4": "Pitoresco",
-            "5": "Divaga",
-            "6": "Fatos aleatórios"
-        },
-        "5": {
-            "1": "Fala rápido",
-            "2": "Rimador",
-            "3": "Robótico",
-            "4": "Fala lenta",
-            "5": "Discursa",
-            "6": "Sibilante"
-        },
-        "6": {
-            "1": "Linguagem de rua",
-            "2": "Gagueja",
-            "3": "Fala sozinho",
-            "4": "Muda de assunto",
-            "5": "Fala alto",
-            "6": "Sussura"
-        }
+      "1": {
+        "1": "Anedotas",
+        "2": "Respiração profunda",
+        "3": "Risadinhas",
+        "4": "Fala pausada",
+        "5": "Oculto",
+        "6": "Voz grave"
+      },
+      "2": {
+        "1": "Fala pausadamente",
+        "2": "Articulado",
+        "3": "Linguagem com floreios",
+        "4": "Voz profunda",
+        "5": "Formal",
+        "6": "Hipnótico"
+      },
+      "3": {
+        "1": "Interrompe",
+        "2": "Lacônico",
+        "3": "Ri",
+        "4": "Pausas longas",
+        "5": "Voz melodiosa",
+        "6": "Monótono"
+      },
+      "4": {
+        "1": "Resmunga",
+        "2": "Narra",
+        "3": "Casual demains",
+        "4": "Pitoresco",
+        "5": "Divaga",
+        "6": "Fatos aleatórios"
+      },
+      "5": {
+        "1": "Fala rápido",
+        "2": "Rimador",
+        "3": "Robótico",
+        "4": "Fala lenta",
+        "5": "Discursa",
+        "6": "Sibilante"
+      },
+      "6": {
+        "1": "Linguagem de rua",
+        "2": "Gagueja",
+        "3": "Fala sozinho",
+        "4": "Muda de assunto",
+        "5": "Fala alto",
+        "6": "Sussura"
+      }
     },
     "spellComponent": {
-		"physicalEffect": {
-            "1": {
-                "1": "Abrir",
-                "2": "Acelerar",
-                "3": "Alterar",
-                "4": "Amedrontar",
-                "5": "Animar",
-                "6": "Atrair"
-            },
-            "2": {
-                "1": "Aumentar",
-                "2": "Conectar",
-                "3": "Consumir",
-                "4": "Conter",
-                "5": "Conter",
-                "6": "Aumentar"
-            },
-            "3": {
-                "1": "Diminuir",
-                "2": "Dividir",
-                "3": "Duplicar",
-                "4": "Eclodir",
-                "5": "Emaranhar",
-                "6": "Esmagar"
-            },
-            "4": {
-                "1": "Expandir",
-                "2": "Fundir",
-                "3": "Gerar",
-                "4": "Iluminar",
-                "5": "Lacerar",
-                "6": "Levitar"
-            },
-            "5": {
-                "1": "Perfurar",
-                "2": "Perseguir",
-                "3": "Petrificar",
-                "4": "Prender",
-                "5": "Proteger",
-                "6": "Refletir"
-            },
-            "6": {
-                "1": "Regenerar",
-                "2": "Repetir",
-                "3": "Ressucitar",
-                "4": "Selar",
-                "5": "Transmutar",
-                "6": "Transportar"
-            }
-        },
-		"physicalElement": {
-            "1": {
-                "1": "Ácido",
-                "2": "Água",
-                "3": "Alcatrão",
-                "4": "Âmbar",
-                "5": "Areia",
-                "6": "Argila"
-            },
-            "2": {
-                "1": "Carne",
-                "2": "Chamas",
-                "3": "Corvos",
-                "4": "Cristal",
-                "5": "Espinhos",
-                "6": "Fungos"
-            },
-            "3": {
-                "1": "Gelo",
-                "2": "Insetos",
-                "3": "Larvas",
-                "4": "Lava",
-                "5": "Lodo",
-                "6": "Madeira"
-            },
-            "4": {
-                "1": "Mel",
-                "2": "Musgo",
-                "3": "Obsidiana",
-                "4": "Óleo",
-                "5": "Osso",
-                "6": "Pedra"
-            },
-            "5": {
-                "1": "Pele",
-                "2": "Planta",
-                "3": "Roedores",
-                "4": "Sal",
-                "5": "Salmoura",
-                "6": "Sangue"
-            },
-            "6": {
-                "1": "Selva",
-                "2": "Serpentes",
-                "3": "Veneno",
-                "4": "Vidro",
-                "5": "Vinhas",
-                "6": "Vinho"
-            }
-        },
-		"physicalForm": {
-            "1": {
-                "1": "Altar",
-                "2": "Armadilha",
-                "3": "Armadura",
-                "4": "Besta",
-                "5": "Caldeirão",
-                "6": "Carruagem"
-            },
-            "2": {
-                "1": "Chave",
-                "2": "Chifre",
-                "3": "Colosso",
-                "4": "Corcel",
-                "5": "Coroa",
-                "6": "Correntes"
-            },
-            "3": {
-                "1": "Elemental",
-                "2": "Enxame",
-                "3": "Escudo",
-                "4": "Flecha",
-                "5": "Fonte",
-                "6": "Garra"
-            },
-            "4": {
-                "1": "Golem",
-                "2": "Lâmina",
-                "3": "Lança",
-                "4": "Manto",
-                "5": "Martelo",
-                "6": "Máscara"
-            },
-            "5": {
-                "1": "Monólito",
-                "2": "Olho",
-                "3": "Parede",
-                "4": "Poço",
-                "5": "Portão",
-                "6": "Prisão"
-            },
-            "6": {
-                "1": "Sentinela",
-                "2": "Servo",
-                "3": "Tela",
-                "4": "Tentáculo",
-                "5": "Tocha",
-                "6": "Trono"
-            }
-        },
-		"etherealEffect": {
-            "1": {
-                "1": "Anulador",
-                "2": "Atemorizante",
-                "3": "Atormetandor",
-                "4": "Atraente",
-                "5": "Calmante",
-                "6": "Cegante"
-            },
-            "2": {
-                "1": "Codificador",
-                "2": "Comunicativo",
-                "3": "Decodificador",
-                "4": "Desorientador",
-                "5": "Deteriorante",
-                "6": "Dispersor"
-            },
-            "3": {
-                "1": "Dissimulante",
-                "2": "Encantador",
-                "3": "Energizante",
-                "4": "Enfurecedor",
-                "5": "Enlouquecedor",
-                "6": "Ensurdecedor"
-            },
-            "4": {
-                "1": "Esclarecedor",
-                "2": "Espião",
-                "3": "Fatigante",
-                "4": "Hipnótico",
-                "5": "Ilusório",
-                "6": "Incitante"
-            },
-            "5": {
-                "1": "Invocador",
-                "2": "Ocultador",
-                "3": "Paralisante",
-                "4": "Protetor",
-                "5": "Repugnante",
-                "6": "Repulsor"
-            },
-            "6": {
-                "1": "Revelador",
-                "2": "Silenciador",
-                "3": "Telepático",
-                "4": "Tóxico",
-                "5": "Cidente",
-                "6": "Vingativo"
-            }
-        },
-		"etherealElement": {
-            "1": {
-                "1": "Alma",
-                "2": "Calor",
-                "3": "Caos",
-                "4": "Chuva",
-                "5": "Cinzas",
-                "6": "Distorção"
-            },
-            "2": {
-                "1": "Reverberação",
-                "2": "Eco",
-                "3": "Ectoplasma",
-                "4": "Êstase",
-                "5": "Estrela",
-                "6": "Fantasma"
-            },
-            "3": {
-                "1": "Fogo",
-                "2": "Fumaça",
-                "3": "Harmonia",
-                "4": "Luz",
-                "5": "Memória",
-                "6": "Mente"
-            },
-            "4": {
-                "1": "Mutação",
-                "2": "Neblina",
-                "3": "Negação",
-                "4": "Neve",
-                "5": "Plasma",
-                "6": "Podridão"
-            },
-            "5": {
-                "1": "Poeira",
-                "2": "Praga",
-                "3": "Probabilidade",
-                "4": "Raio",
-                "5": "Sombra",
-                "6": "Sonho"
-            },
-            "6": {
-                "1": "Sussuro",
-                "2": "Tempo",
-                "3": "Trovão",
-                "4": "Vapor",
-                "5": "Vazio",
-                "6": "Vento"
-            }
-        },
-		"etherealForm": {
-            "1": {
-                "1": "Arco",
-                "2": "Aura",
-                "3": "Bolha",
-                "4": "Campo",
-                "5": "Cascata",
-                "6": "Centelha"
-            },
-            "2": {
-                "1": "Círculo",
-                "2": "Cone",
-                "3": "Cubo",
-                "4": "Dança",
-                "5": "Disco",
-                "6": "Enxame"
-            },
-            "3": {
-                "1": "Esfera",
-                "2": "Espiral",
-                "3": "EStilhaço",
-                "4": "Explosão",
-                "5": "Facho",
-                "6": "Forma"
-            },
-            "4": {
-                "1": "Gota",
-                "2": "Grito",
-                "3": "Impulso",
-                "4": "Nuvem",
-                "5": "Olhar",
-                "6": "Onda"
-            },
-            "5": {
-                "1": "Palavra",
-                "2": "Pirâmide",
-                "3": "Portal",
-                "4": "Pulso",
-                "5": "Raio",
-                "6": "Rajada"
-            },
-            "6": {
-                "1": "Relâmpago",
-                "2": "Tempestade",
-                "3": "Toque",
-                "4": "Torrente",
-                "5": "Cínculo",
-                "6": "Córtice"
-            }
-        }
-    },
-    "spellFormula": {
+      "physicalEffect": {
         "1": {
-            "1": ["physicalEffect", "physicalForm"],
-            "2": ["physicalForm", "etherealElement"]
+          "1": "Abrir",
+          "2": "Acelerar",
+          "3": "Alterar",
+          "4": "Amedrontar",
+          "5": "Animar",
+          "6": "Atrair"
         },
         "2": {
-            "1": ["physicalEffect", "etherealForm"],
-            "2": ["etherealForm", "etherealElement"]
+          "1": "Aumentar",
+          "2": "Conectar",
+          "3": "Consumir",
+          "4": "Conter",
+          "5": "Conter",
+          "6": "Aumentar"
         },
         "3": {
-            "1": ["physicalForm", "etherealEffect"],
-            "2": ["physicalEffect", "physicalElement"]
+          "1": "Diminuir",
+          "2": "Dividir",
+          "3": "Duplicar",
+          "4": "Eclodir",
+          "5": "Emaranhar",
+          "6": "Esmagar"
         },
         "4": {
-            "1": ["etherealForm", "etherealEffect"],
-            "2": ["physicalEffect", "etherealElement"]
+          "1": "Expandir",
+          "2": "Fundir",
+          "3": "Gerar",
+          "4": "Iluminar",
+          "5": "Lacerar",
+          "6": "Levitar"
         },
         "5": {
-            "1": ["physicalForm", "physicalElement"],
-            "2": ["physicalElement", "etherealEffect"]
+          "1": "Perfurar",
+          "2": "Perseguir",
+          "3": "Petrificar",
+          "4": "Prender",
+          "5": "Proteger",
+          "6": "Refletir"
         },
         "6": {
-            "1": ["etherealForm", "physicalElement"],
-            "2": ["etherealElement", "etherealEffect"]
+          "1": "Regenerar",
+          "2": "Repetir",
+          "3": "Ressucitar",
+          "4": "Selar",
+          "5": "Transmutar",
+          "6": "Transportar"
         }
+      },
+      "physicalElement": {
+        "1": {
+          "1": "Ácido",
+          "2": "Água",
+          "3": "Alcatrão",
+          "4": "Âmbar",
+          "5": "Areia",
+          "6": "Argila"
+        },
+        "2": {
+          "1": "Carne",
+          "2": "Chamas",
+          "3": "Corvos",
+          "4": "Cristal",
+          "5": "Espinhos",
+          "6": "Fungos"
+        },
+        "3": {
+          "1": "Gelo",
+          "2": "Insetos",
+          "3": "Larvas",
+          "4": "Lava",
+          "5": "Lodo",
+          "6": "Madeira"
+        },
+        "4": {
+          "1": "Mel",
+          "2": "Musgo",
+          "3": "Obsidiana",
+          "4": "Óleo",
+          "5": "Osso",
+          "6": "Pedra"
+        },
+        "5": {
+          "1": "Pele",
+          "2": "Planta",
+          "3": "Roedores",
+          "4": "Sal",
+          "5": "Salmoura",
+          "6": "Sangue"
+        },
+        "6": {
+          "1": "Selva",
+          "2": "Serpentes",
+          "3": "Veneno",
+          "4": "Vidro",
+          "5": "Vinhas",
+          "6": "Vinho"
+        }
+      },
+      "physicalForm": {
+        "1": {
+          "1": "Altar",
+          "2": "Armadilha",
+          "3": "Armadura",
+          "4": "Besta",
+          "5": "Caldeirão",
+          "6": "Carruagem"
+        },
+        "2": {
+          "1": "Chave",
+          "2": "Chifre",
+          "3": "Colosso",
+          "4": "Corcel",
+          "5": "Coroa",
+          "6": "Correntes"
+        },
+        "3": {
+          "1": "Elemental",
+          "2": "Enxame",
+          "3": "Escudo",
+          "4": "Flecha",
+          "5": "Fonte",
+          "6": "Garra"
+        },
+        "4": {
+          "1": "Golem",
+          "2": "Lâmina",
+          "3": "Lança",
+          "4": "Manto",
+          "5": "Martelo",
+          "6": "Máscara"
+        },
+        "5": {
+          "1": "Monólito",
+          "2": "Olho",
+          "3": "Parede",
+          "4": "Poço",
+          "5": "Portão",
+          "6": "Prisão"
+        },
+        "6": {
+          "1": "Sentinela",
+          "2": "Servo",
+          "3": "Tela",
+          "4": "Tentáculo",
+          "5": "Tocha",
+          "6": "Trono"
+        }
+      },
+      "etherealEffect": {
+        "1": {
+          "1": "Anulador",
+          "2": "Atemorizante",
+          "3": "Atormetandor",
+          "4": "Atraente",
+          "5": "Calmante",
+          "6": "Cegante"
+        },
+        "2": {
+          "1": "Codificador",
+          "2": "Comunicativo",
+          "3": "Decodificador",
+          "4": "Desorientador",
+          "5": "Deteriorante",
+          "6": "Dispersor"
+        },
+        "3": {
+          "1": "Dissimulante",
+          "2": "Encantador",
+          "3": "Energizante",
+          "4": "Enfurecedor",
+          "5": "Enlouquecedor",
+          "6": "Ensurdecedor"
+        },
+        "4": {
+          "1": "Esclarecedor",
+          "2": "Espião",
+          "3": "Fatigante",
+          "4": "Hipnótico",
+          "5": "Ilusório",
+          "6": "Incitante"
+        },
+        "5": {
+          "1": "Invocador",
+          "2": "Ocultador",
+          "3": "Paralisante",
+          "4": "Protetor",
+          "5": "Repugnante",
+          "6": "Repulsor"
+        },
+        "6": {
+          "1": "Revelador",
+          "2": "Silenciador",
+          "3": "Telepático",
+          "4": "Tóxico",
+          "5": "Cidente",
+          "6": "Vingativo"
+        }
+      },
+      "etherealElement": {
+        "1": {
+          "1": "Alma",
+          "2": "Calor",
+          "3": "Caos",
+          "4": "Chuva",
+          "5": "Cinzas",
+          "6": "Distorção"
+        },
+        "2": {
+          "1": "Reverberação",
+          "2": "Eco",
+          "3": "Ectoplasma",
+          "4": "Êstase",
+          "5": "Estrela",
+          "6": "Fantasma"
+        },
+        "3": {
+          "1": "Fogo",
+          "2": "Fumaça",
+          "3": "Harmonia",
+          "4": "Luz",
+          "5": "Memória",
+          "6": "Mente"
+        },
+        "4": {
+          "1": "Mutação",
+          "2": "Neblina",
+          "3": "Negação",
+          "4": "Neve",
+          "5": "Plasma",
+          "6": "Podridão"
+        },
+        "5": {
+          "1": "Poeira",
+          "2": "Praga",
+          "3": "Probabilidade",
+          "4": "Raio",
+          "5": "Sombra",
+          "6": "Sonho"
+        },
+        "6": {
+          "1": "Sussuro",
+          "2": "Tempo",
+          "3": "Trovão",
+          "4": "Vapor",
+          "5": "Vazio",
+          "6": "Vento"
+        }
+      },
+      "etherealForm": {
+        "1": {
+          "1": "Arco",
+          "2": "Aura",
+          "3": "Bolha",
+          "4": "Campo",
+          "5": "Cascata",
+          "6": "Centelha"
+        },
+        "2": {
+          "1": "Círculo",
+          "2": "Cone",
+          "3": "Cubo",
+          "4": "Dança",
+          "5": "Disco",
+          "6": "Enxame"
+        },
+        "3": {
+          "1": "Esfera",
+          "2": "Espiral",
+          "3": "EStilhaço",
+          "4": "Explosão",
+          "5": "Facho",
+          "6": "Forma"
+        },
+        "4": {
+          "1": "Gota",
+          "2": "Grito",
+          "3": "Impulso",
+          "4": "Nuvem",
+          "5": "Olhar",
+          "6": "Onda"
+        },
+        "5": {
+          "1": "Palavra",
+          "2": "Pirâmide",
+          "3": "Portal",
+          "4": "Pulso",
+          "5": "Raio",
+          "6": "Rajada"
+        },
+        "6": {
+          "1": "Relâmpago",
+          "2": "Tempestade",
+          "3": "Toque",
+          "4": "Torrente",
+          "5": "Cínculo",
+          "6": "Córtice"
+        }
+      }
+    },
+    "spellFormula": {
+      "1": {
+        "1": [
+          "physicalEffect",
+          "physicalForm"
+        ],
+        "2": [
+          "physicalForm",
+          "etherealElement"
+        ]
+      },
+      "2": {
+        "1": [
+          "physicalEffect",
+          "etherealForm"
+        ],
+        "2": [
+          "etherealForm",
+          "etherealElement"
+        ]
+      },
+      "3": {
+        "1": [
+          "physicalForm",
+          "etherealEffect"
+        ],
+        "2": [
+          "physicalEffect",
+          "physicalElement"
+        ]
+      },
+      "4": {
+        "1": [
+          "etherealForm",
+          "etherealEffect"
+        ],
+        "2": [
+          "physicalEffect",
+          "etherealElement"
+        ]
+      },
+      "5": {
+        "1": [
+          "physicalForm",
+          "physicalElement"
+        ],
+        "2": [
+          "physicalElement",
+          "etherealEffect"
+        ]
+      },
+      "6": {
+        "1": [
+          "etherealForm",
+          "physicalElement"
+        ],
+        "2": [
+          "etherealElement",
+          "etherealEffect"
+        ]
+      }
+    },
+    "assets": {
+      "1": {
+        "1": "Autoridade",
+        "2": "Evita detecção",
+        "3": "Chamada de favores",
+        "4": "Encantador",
+        "5": "Cozinha os livros",
+        "6": "Apaga evidências"
+      },
+      "2": {
+        "1": "Excelente mentiroso",
+        "2": "Extremamente rico",
+        "3": "Líder de facção|ADD_FACTION",
+        "4": "Membro da ffacçãoaction|ADD_FACTION",
+        "5": "Temido",
+        "6": "Base fortificada"
+      },
+      "3": {
+        "1": "Lindo",
+        "2": "Ouve rumores",
+        "3": "Família enorme",
+        "4": "Grande biblioteca",
+        "5": "Imitador",
+        "6": "Interrogador"
+      },
+      "4": {
+        "1": "Conhece um cara",
+        "2": "Sabe um caminho",
+        "3": "Lava dinheiro",
+        "4": "Aprendido",
+        "5": "celebridade local",
+        "6": "Conhecimento local"
+      },
+      "5": {
+        "1": "Ajudantes leais",
+        "2": "Oráculo mediano",
+        "3": "Nada a perder",
+        "4": "Possui os guardas",
+        "5": "Cônjuge poderoso",
+        "6": "Compra equipamentos"
+      },
+      "6": {
+        "1": "Puxa as cordas",
+        "2": "Laboratório secreto",
+        "3": "Contrabando de células",
+        "4": "Mercadorias contrabandeadas",
+        "5": "Rede de espionagem",
+        "6": "Herói de guerra"
+      }
+    },
+    "liabilities": {
+      "1": {
+        "1": "Vício",
+        "2": "Alcoólico",
+        "3": "Aliado corrupto",
+        "4": "Covarde",
+        "5": "Decadente",
+        "6": "Amor proibido"
+      },
+      "2": {
+        "1": "Jogador",
+        "2": "Glutão",
+        "3": "ganancioso",
+        "4": "Herege",
+        "5": "Dívidas enormes",
+        "6": "Impostor"
+      },
+      "3": {
+        "1": "Insanidade",
+        "2": "Inveja",
+        "3": "Deixa evidência",
+        "4": "Muitos inimigos",
+        "5": "Desinformado",
+        "6": "Rastro de dinheiro"
+      },
+      "4": {
+        "1": "Narcisista",
+        "2": "Precisa de remédio",
+        "3": "TOC",
+        "4": "Paranóico",
+        "5": "Parte",
+        "6": "Equipamento ruim"
+      },
+      "5": {
+        "1": "Protetor",
+        "2": "Escândalo",
+        "3": "De coração mole",
+        "4": "Rotinas estritas",
+        "5": "Supersticioso",
+        "6": "Suspeito"
+      },
+      "6": {
+        "1": "Temperatura",
+        "2": "Confiar",
+        "3": "Base vulnerável",
+        "4": "Procurado",
+        "5": "De vontade fraca",
+        "6": "Amplamente desprezado"
+      }
+    },
+    "goals": {
+      "1": {
+        "1": "Uma vida melhor",
+        "2": "Aceitação",
+        "3": "Adquirir Itens",
+        "4": "Artigo de artesanato",
+        "5": "Destruir facção|ADD_FACTION",
+        "6": "Destruir item"
+      },
+      "2": {
+        "1": "Enlightenment",
+        "2": "Fame",
+        "3": "Facção encontrada|ADD_FACTION",
+        "4": "Freedom",
+        "5": "Glory",
+        "6": "Impress NPC"
+      },
+      "3": {
+        "1": "Infamy",
+        "2": "Infiltrate facção|ADD_FACTION",
+        "3": "Justice",
+        "4": "Kidnap NPC",
+        "5": "Lead facção|ADD_FACTION",
+        "6": "Leaning"
+      },
+      "4": {
+        "1": "Locate NPC",
+        "2": "Love",
+        "3": "Mastery",
+        "4": "Power",
+        "5": "Research locations",
+        "6": "Rescue NPC"
+      },
+      "5": {
+        "1": "Resolve dispute",
+        "2": "Restaurar facção|ADD_FACTION",
+        "3": "Reveal a secret",
+        "4": "Revenge",
+        "5": "Sabotage facção|ADD_FACTION",
+        "6": "Serve a deity"
+      },
+      "6": {
+        "1": "Serve evil",
+        "2": "Serve facção|ADD_FACTION",
+        "3": "Serve ideology",
+        "4": "Serve leader",
+        "5": "Serve the needy",
+        "6": "Wealth"
+      }
+    },
+    "misfortunes": {
+      "1": {
+        "1": "Abandonado",
+        "2": "Viciado",
+        "3": "Preso",
+        "4": "chantageado",
+        "5": "Arrombado",
+        "6": "Desafiado"
+      },
+      "2": {
+        "1": "Condenado",
+        "2": "Aleijado",
+        "3": "Amaldiçoado",
+        "4": "Defraudado",
+        "5": "Rebaixado",
+        "6": "Deprimido"
+      },
+      "3": {
+        "1": "Desacreditado",
+        "2": "Dispensado",
+        "3": "Rejeitado",
+        "4": "Exilado",
+        "5": "Faminto",
+        "6": "Esquecido"
+      },
+      "4": {
+        "1": "Emoldurado",
+        "2": "Assombrado",
+        "3": "Humilado",
+        "4": "Empobrecido",
+        "5": "Sequestrado",
+        "6": "Perdido"
+      },
+      "5": {
+        "1": "Mobbed",
+        "2": "Mutilado",
+        "3": "Excesso de trabalho",
+        "4": "Envenenado",
+        "5": "Perseguido",
+        "6": "Rejeitado"
+      },
+      "6": {
+        "1": "Substitui",
+        "2": "Roubado",
+        "3": "Doente",
+        "4": "Processado",
+        "5": "Suspeito",
+        "6": "Transformado"
+      }
+    },
+    "missions": {
+      "1": {
+        "1": "Apreender",
+        "2": "Assassinar",
+        "3": "chantagem",
+        "4": "Burro",
+        "5": "Gráfico",
+        "6": "Convencer"
+      },
+      "2": {
+        "1": "Desfigurar",
+        "2": "Defraudar",
+        "3": "Entregar",
+        "4": "Destruir",
+        "5": "Desacreditar",
+        "6": "Acompanhante"
+      },
+      "3": {
+        "1": "Exfiltrar",
+        "2": "Extorquir",
+        "3": "Seguir",
+        "4": "Quadro",
+        "5": "Representar",
+        "6": "Impressionar"
+      },
+      "4": {
+        "1": "Infiltrar",
+        "2": "Interrogar",
+        "3": "Investigar",
+        "4": "Sequestrar",
+        "5": "Localizar",
+        "6": "Planta"
+      },
+      "5": {
+        "1": "Proteger",
+        "2": "Invasão",
+        "3": "Substituir",
+        "4": "Recuperar",
+        "5": "Rob",
+        "6": "Ruína"
+      },
+      "6": {
+        "1": "Sabotagem",
+        "2": "Contrabando",
+        "3": "Vigilância",
+        "4": "Assumir",
+        "5": "Terrorizar",
+        "6": "Ameaçar"
+      }
+    },
+    "secrets": {
+        "1": {
+            "1": "Viciado",
+            "2": "Artificial",
+            "3": "Assassino",
+            "4": "Falta",
+            "5": "Em espera",
+            "6": "Contraespião"
+        },
+        "2": {
+            "1": "Cultista",
+            "2": "Semideus",
+            "3": "Linhagem maligna",
+            "4": "Exílio",
+            "5": "Cerca",
+            "6": "Fugitivo"
+        },
+        "3": {
+            "1": "Fantasma",
+            "2": "Tem um filho",
+            "3": "Herege",
+            "4": "Alto nascido",
+            "5": "Enorme fortuna",
+            "6": "Ilusão"
+        },
+        "4": {
+            "1": "Insurrecional",
+            "2": "Baixo nascido",
+            "3": "Casado",
+            "4": "Controlado pela mente",
+            "5": "Infortúnio",
+            "6": "Caçador de monstros"
+        },
+        "5": {
+            "1": "Não humano",
+            "2": "NPC",
+            "3": "Polígamo",
+            "4": "Protege relíquia",
+            "5": "Nascimento escandaloso",
+            "6": "Polícia secreta"
+        },
+        "6": {
+            "1": "Assassino em série",
+            "2": "Traficante",
+            "3": "Espião",
+            "4": "Viajante do tempo",
+            "5": "Transformado",
+            "6": "criminoso de guerra"
+          }
+    },
+    "reputations": {
+        "1": {
+            "1": "Ambicioso",
+            "2": "Autoritário",
+            "3": "Boro",
+            "4": "Mutuário",
+            "5": "Celebridade",
+            "6": "Caridade"
+        },
+        "2": {
+            "1": "Trapacear",
+            "2": "Perigoso",
+            "3": "Apresentador",
+            "4": "Fofoca",
+            "5": "Trabalhador",
+            "6": "Santo"
+        },
+        "3": {
+            "1": "Honesta",
+            "2": "Hipocondríaco",
+            "3": "Idiota",
+            "4": "Influente",
+            "5": "Deitado",
+            "6": "Líder"
+        },
+        "4": {
+            "1": "Miantropo",
+            "2": "Avaro",
+            "3": "Vizinhança",
+            "4": "Bobagem",
+            "5": "Desagradável",
+            "6": "Supereducado"
+        },
+        "5": {
+            "1": "Participante",
+            "2": "Piedoso",
+            "3": "Apropriado",
+            "4": "Profeta da desgraça",
+            "5": "Repulsivo",
+            "6": "Respeitado"
+        },
+        "6": {
+            "1": "Riffraff",
+            "2": "Escândalo",
+            "3": "Bola de gosma",
+            "4": "Aterrorizante",
+            "5": "Estranho",
+            "6": "Sábio"
+          }
+    },
+    "hobbies": {
+        "1": {
+            "1": "Arqueologia",
+            "2": "Coleção de arte",
+            "3": "Má ficção",
+            "4": "Caligrafia",
+            "5": "Jogos de cartas",
+            "6": "Mecanismo de relógio"
+          },
+          "2": {
+            "1": "Colecionando gatos",
+            "2": "Cozinha",
+            "3": "Conhecimento sombrio",
+            "4": "Criação de cães",
+            "5": "Bordado",
+            "6": "Exercício"
+          },
+          "3": {
+            "1": "Falcoaria",
+            "2": "Moda",
+            "3": "Pesca",
+            "4": "Culturas estrangeiras",
+            "5": "Jardinagem",
+            "6": "Histórico"
+          },
+          "4": {
+            "1": "Corridas de cavalos",
+            "2": "Caça",
+            "3": "Instrumento",
+            "4": "Tricô",
+            "5": "Jogos de gramado",
+            "6": "Alpinismo"
+          },
+          "5": {
+            "1": "Ópera",
+            "2": "Pintura",
+            "3": "Poesia",
+            "4": "Resolução de quebra-cabeças",
+            "5": "Enigma",
+            "6": "Ciência"
+          },
+          "6": {
+            "1": "Escultura",
+            "2": "Esboçando",
+            "3": "Fumar",
+            "4": "Teatro",
+            "5": "Tecendo",
+            "6": "Uísque"
+          }
+    },
+    "factions": {
+        "1": {
+            "1": "Movimento artístico",
+            "2": "Guilda dos mendigos",
+            "3": "Mercado negro",
+            "4": "Irmandade",
+            "5": "Guarda da cidade",
+            "6": "Conspiração"
+          },
+          "2": {
+            "1": "Guilda de ofícios",
+            "2": "Família do crime",
+            "3": "Anel do crime",
+            "4": "Culto das Trevas",
+            "5": "Clube do explorador",
+            "6": "Empresa livre"
+          },
+          "3": {
+            "1": "Clube gourmet",
+            "2": "Tripulação do assalto",
+            "3": "Seita herética",
+            "4": "Alto conselho",
+            "5": "Assassinos contratados",
+            "6": "Milícia local"
+          },
+          "4": {
+            "1": "Igreja Nacional",
+            "2": "Casa Nobre",
+            "3": "Clã Outlander",
+            "4": "Gangue fora da lei",
+            "5": "Partido político",
+            "6": "Ordem religiosa"
+          },
+          "5": {
+            "1": "Seita religiosa",
+            "2": "Resistência",
+            "3": "Exército real",
+            "4": "Casa Real",
+            "5": "Círculo do erudito",
+            "6": "Sociedade secreta"
+          },
+          "6": {
+            "1": "Rede espiã",
+            "2": "Artistas de rua",
+            "3": "Gangue de rua",
+            "4": "Músicos de rua",
+            "5": "trupe de teatro",
+            "6": "Empresa comercial"
+          },
+      "traits": {
+        "1": {
+            "1": "Falta",
+            "2": "Burocrático",
+            "3": "Caridade",
+            "4": "Confuso",
+            "5": "Conectado",
+            "6": "Corrupto"
+          },
+          "2": {
+            "1": "Decadente",
+            "2": "Decompondo",
+            "3": "Delirante",
+            "4": "Dividido",
+            "5": "Diminuindo",
+            "6": "Eficiente"
+          },
+          "3": {
+            "1": "Esotérico",
+            "2": "Expandindo",
+            "3": "Assombrado",
+            "4": "Incompetente",
+            "5": "Incorruptível",
+            "6": "Insano"
+          },
+          "4": {
+            "1": "Insular",
+            "2": "Manipulação",
+            "3": "Marcial",
+            "4": "Personalidade",
+            "5": "Piedoso",
+            "6": "Popular"
+          },
+          "5": {
+            "1": "Justo",
+            "2": "Implacável",
+            "3": "Segredo",
+            "4": "Subversivo",
+            "5": "Suprimido",
+            "6": "Ameaçado"
+          },
+          "6": {
+            "1": "Prosperando",
+            "2": "Impopular",
+            "3": "Em ascensão",
+            "4": "Rico",
+            "5": "Bem preparado",
+            "6": "Xenofóbico"
+          }
+      },
+      "goals": {
+        "1": {
+            "1": "Aconselhar líder",
+            "2": "Evitar detecção",
+            "3": "Despertar o ser",
+            "4": "Coletar artefatos",
+            "5": "Construir base",
+          "6": "Facção de Controle|ADD_FACTION"
+        },
+        "2": {
+            "1": "Política de Controle",
+            "2": "Criar artefato",
+          "3": "Criar  monstro|ADD_MONSTER",
+          "4": "Derrotar facção|ADD_FACTION",
+          "5": "Defender os pensionistas",
+           "6": "Defender líder"
+        },
+        "3": {
+            "1": "Destruir artefatos",
+            "2": "Destruir o ser",
+            "3": "Destruir o vilão",
+            "4": "Aplicar a lei",
+            "5": "Enriquecer membros",
+            "6": "Entreter"
+        },
+        "4": {
+            "1": "Trocar mercadorias",
+            "2": "Ouvir rumores",
+            "3": "Satisfaça os gostos",
+            "4": "Infiltrar facção|ADD_FACTION",
+            "5": "Mapear a natureza",
+            "6": "Ordem de derrubada"
+        },
+        "5": {
+            "1": "Preservar a linhagem",
+            "2": "Preservar a sabedoria",
+            "3": "Produzir bens",
+            "4": "Promover artes",
+            "5": "Promover artesanato",
+            "6": "Expurgar traidores"
+        },
+        "6": {
+            "1": "Vender serviços",
+            "2": "Compartilhar conhecimento",
+            "3": "Espalhe crenças",
+            "4": "Invocar o mal",
+            "5": "Sobreviver",
+            "6": "Transporte de mercadorias"
+        }
+      }
+    },
+    "monsters": {
+      "types": {
+        "Aerial": {
+            "1": {
+                "1": "Albatroz",
+                "2": "Morcego",
+                "3": "Besouro",
+                "4": "Pássaro do Paraíso",
+                "5": "Borboleta",
+                "6": "Condor"
+              },
+              "2": {
+                "1": "Guindaste",
+                "2": "Corvo",
+                "3": "Libélula",
+                "4": "Águia",
+                "5": "Falcão",
+                "6": "Vaga-lume"
+              },
+              "3": {
+                "1": "Flamingo",
+                "2": "Voar",
+                "3": "Esquilo Voador",
+                "4": "Ganso",
+                "5": "Gaivota",
+                "6": "Beija-flor"
+              },
+              "4": {
+                "1": "Mari-pescador",
+                "2": "Gafanhoto",
+                "3": "Garra",
+                "4": "Mantis",
+                "5": "Tordo",
+                "6": "Mosquito"
+              },
+              "5": {
+                "1": "Mariposa",
+                "2": "Coruja",
+                "3": "Papagaio",
+                "4": "Pavão",
+                "5": "Pelicano",
+                "6": "Pteranodonte"
+              },
+              "6": {
+                "1": "Galo",
+                "2": "Pardal",
+                "3": "Cisne",
+                "4": "Abutre",
+                "5": "Vespa",
+                "6": "Pica-pau"
+              }
+        },
+        "Terrestrial": {
+            "1": {
+                "1": "Formiga",
+                "2": "Macaco",
+                "3": "Tatu",
+                "4": "Texugo",
+                "5": "Urso",
+                "6": "Javali"
+              },
+              "2": {
+                "1": "Lagarta",
+                "2": "Centipede",
+                "3": "camaleão",
+                "4": "Barata",
+                "5": "Cervo",
+                "6": "Elefante"
+              },
+              "3": {
+                "1": "Furão",
+                "2": "Raposa",
+                "3": "Girafa",
+                "4": "Cabra",
+                "5": "Cavalo",
+                "6": "Humano"
+              },
+              "4": {
+                "1": "Mole",
+                "2": "Avestruz",
+                "3": "Boi",
+                "4": "Porco-espinho",
+                "5": "Coelho",
+                "6": "Raccoon"
+              },
+              "5": {
+                "1": "Rato",
+                "2": "rinoceronte",
+                "3": "Escorpião",
+                "4": "Ovelhas",
+                "5": "Lesma",
+                "6": "Caracol"
+              },
+              "6": {
+                "1": "Serpente",
+                "2": "Aranha",
+                "3": "Esquilo",
+                "4": "Tigre",
+                "5": "Lobo",
+                "6": "Wolverine"
+              }
+        },
+        "Aquatic": {
+            "1": {
+                "1": "Jacaré",
+                "2": "Ameba",
+                "3": "Pescador",
+                "4": "Castor",
+                "5": "Molusco",
+                "6": "Caranguejo"
+              },
+              "2": {
+                "1": "Golfinho",
+                "2": "Enguia",
+                "3": "Sapo",
+                "4": "Hipopótamo",
+                "5": "água-viva",
+                "6": "Sanguessuga"
+              },
+              "3": {
+                "1": "Lagosta",
+                "2": "Peixe-boi",
+                "3": "Raia Manta",
+                "4": "Rato almiscarado",
+                "5": "Narval",
+                "6": "Newt"
+              },
+              "4": {
+                "1": "Polvo",
+                "2": "Lontra",
+                "3": "Pinguim",
+                "4": "Ornitorrinco",
+                "5": "Pufffsh",
+                "6": "Salamandra"
+              },
+              "5": {
+                "1": "Anêmona-do-mar",
+                "2": "Ouriço-do-mar",
+                "3": "Cavalo-marinho",
+                "4": "Selo",
+                "5": "Tubarão",
+                "6": "Camarão"
+              },
+              "6": {
+                "1": "Lula",
+                "2": "Peixe-espada",
+                "3": "girino",
+                "4": "Tartaruga",
+                "5": "Morsa",
+                "6": "Baleia"
+              }
+        }
+      },
+      "feature": {
+        "1": {
+            "1": "Galhadas",
+            "2": "Bico",
+            "3": "Carapaça",
+            "4": "Garras",
+            "5": "Olhos compostos",
+            "6": "Pernas Oculares"
+          },
+          "2": {
+            "1": "Caninos",
+            "2": "Barbatanas",
+            "3": "Pêlo",
+            "4": "Brânquias",
+            "5": "Cascos",
+            "6": "Chifres"
+          },
+          "3": {
+            "1": "Sem pernas",
+            "2": "Língua longa",
+            "3": "Muitos olhos",
+            "4": "Muitos membros",
+            "5": "Muco",
+            "6": "Pinças"
+          },
+          "4": {
+            "1": "Placas",
+            "2": "Plumagem",
+            "3": "Probóscide",
+            "4": "Escalas",
+            "5": "Segmentos",
+            "6": "Cabelo desgrenhado"
+          },
+          "5": {
+            "1": "Casca",
+            "2": "Espinhos",
+            "3": "Espinhas",
+            "4": "Fiandeiras",
+            "5": "Ferrão",
+            "6": "ventosas"
+          },
+          "6": {
+            "1": "Cauda",
+            "2": "Garras",
+            "3": "Tentáculos",
+            "4": "Tronco",
+            "5": "Presas",
+            "6": "Asas"
+          }
+      },
+      "traits": {
+        "1": {
+            "1": "Anfíbio",
+            "2": "Inchado",
+            "3": "Frágil",
+            "4": "Canibal",
+            "5": "Argiloso",
+            "6": "Colossal"
+          },
+          "2": {
+            "1": "Cristalino",
+            "2": "Decompondo",
+            "3": "Etéreo",
+            "4": "ETHEREAL_ELEMENT",
+            "5": "Todos os jovens",
+            "6": "Sem olhos"
+          },
+          "3": {
+            "1": "Sem medo",
+            "2": "Fofo",
+            "3": "Fúngico",
+            "4": "Gelatina",
+            "5": "Geométrico",
+            "6": "endurecido"
+          },
+          "4": {
+            "1": "Ilusório",
+            "2": "Inteligente",
+            "3": "Iridescent",
+            "4": "Luminoso",
+            "5": "Muitas cabeças",
+            "6": "Mecânico"
+          },
+          "5": {
+            "1": "PHYSICAL_ELEMENT",
+            "2": "Planar",
+            "3": "Refletivo",
+            "4": "Borracha",
+            "5": "Sombrio",
+            "6": "Afiado"
+          },
+          "6": {
+            "1": "Esquelético",
+            "2": "viscoso",
+            "3": "Pegajoso",
+            "4": "Fedorento",
+            "5": "Pequeno",
+            "6": "Translúcido"
+          }
+      },
+      "abilities": {
+        "1": {
+            "1": "Absorvendo",
+            "2": "Sangue ácido",
+            "3": "Antimágica",
+            "4": "Ocultar",
+            "5": "Arma de sopro",
+            "6": "Camuflagem"
+          },
+          "2": {
+            "1": "Duplicando",
+            "2": "Elétrico",
+            "3": "Enredar",
+            "4": "ETHEREAL_EFFECT",
+            "5": "Explodindo",
+            "6": "Voando"
+          },
+          "3": {
+            "1": "Arma do olhar",
+            "2": "Hipnotizando",
+            "3": "Impermeável",
+            "4": "Invisível",
+            "5": "drenagem de vida",
+            "6": "Magnético"
+          },
+          "4": {
+            "1": "Imitando",
+            "2": "Leitura da mente",
+            "3": "Paralisante",
+            "4": "Fase",
+            "5": "PHYSICAL_EFFECT",
+            "6": "Veneno"
+          },
+          "5": {
+            "1": "Radioativo",
+            "2": "Regenerando",
+            "3": "Refletivo",
+            "4": "Mudança de forma",
+            "5": "Conjuração",
+            "6": "Furtivo"
+          },
+          "6": {
+            "1": "Estrangulamento",
+            "2": "Super Força",
+            "3": "Telecinético",
+            "4": "Teletransporte",
+            "5": "Vampírico",
+            "6": "Rastreamento de Parede"
+          }
+      },
+      "tactics": {
+        "1": {
+            "1": "Emboscada",
+            "2": "Pedir suporte",
+            "3": "Capturar",
+            "4": "Carregar",
+            "5": "Escalar inimigos",
+            "6": "Obrigar adoração"
+          },
+          "2": {
+            "1": "Criar barreira",
+            "2": "Enganar",
+            "3": "Duelo de demanda",
+            "4": "Desorientar",
+            "5": "Circular",
+            "6": "Evadir"
+          },
+          "3": {
+            "1": "Agrupar",
+            "2": "Reunir força",
+            "3": "Enlouquecer",
+            "4": "Harry",
+            "5": "Atirar inimigos",
+            "6": "Imobilizar"
+          },
+          "4": {
+            "1": "Manipular",
+            "2": "Simulação",
+            "3": "Monólogo",
+            "4": "Ordenar lacaio",
+            "5": "Proteger líder",
+            "6": "Proteger-se"
+          },
+          "5": {
+            "1": "Dispersar inimigos",
+            "2": "Perseguir",
+            "3": "Roubar de",
+            "4": "Enxame",
+            "5": "Alvo insolente",
+            "6": "Líder alvo"
+          },
+          "6": {
+            "1": "Alvo mais próximo",
+            "2": "Destino mais rico",
+            "3": "Alvo mais forte",
+            "4": "Alvo mais fraco",
+            "5": "Brinque com",
+            "6": "Usar terreno"
+          }
+      },
+      "personality": {
+        "1": {
+            "1": "Alien",
+            "2": "A distância",
+            "3": "Entediado",
+            "4": "Cuidado",
+            "5": "Covarde",
+            "6": "Curioso"
+          },
+          "2": {
+            "1": "Desonesto",
+            "2": "Distraível",
+            "3": "Educado",
+            "4": "Amargo",
+            "5": "Inveja",
+            "6": "Erudito"
+          },
+          "3": {
+            "1": "Fanático",
+            "2": "Esquecido",
+            "3": "Generoso",
+            "4": "Odioso",
+            "5": "Honroso",
+            "6": "Humilde"
+          },
+          "4": {
+            "1": "Cansado",
+            "2": "Jovial",
+            "3": "Legalístico",
+            "4": "Manipulação",
+            "5": "Megalomaníaco",
+            "6": "Melancolia"
+          },
+          "5": {
+            "1": "Meticuloso",
+            "2": "Místico",
+            "3": "Obsessivo",
+            "4": "Fora de contato",
+            "5": "Paranóico",
+            "6": "educado"
+          },
+          "6": {
+            "1": "Psicopata",
+            "2": "Sofisticado",
+            "3": "Sensível",
+            "4": "Não impressionado",
+            "5": "Vão",
+            "6": "Xenofóbico"
+          }
+      },
+      "weakness": {
+        "1": {
+            "1": "Sinos",
+            "2": "Canto dos pássaros",
+            "3": "Crianças",
+            "4": "Frio",
+            "5": "Ferro Frio",
+            "6": "Competição"
+          },
+          "2": {
+            "1": "Conversa",
+            "2": "Deformidade",
+            "3": "Bajulação",
+            "4": "Flores",
+            "5": "Presentes",
+            "6": "Ouro"
+          },
+          "3": {
+            "1": "Calor",
+            "2": "Ícone Sagrado",
+            "3": "Água Benta",
+            "4": "Cozinhar em Casa",
+            "5": "INSANITIES",
+            "6": "Itens|ADD_ITEM"
+          },
+          "4": {
+            "1": "MÉTODOS",
+            "2": "Espelhos",
+            "3": "Visco",
+            "4": "Luar",
+            "5": "Música",
+            "6": "Filactaria"
+          },
+          "5": {
+            "1": "Quebra-cabeças",
+            "2": "Enigmas",
+            "3": "Rituais",
+            "4": "Arma de Prata",
+            "5": "Luz do Sol",
+            "6": "Lágrimas"
+          },
+          "6": {
+            "1": "Nome Verdadeiro",
+            "2": "VAL_MATERIAIS",
+            "3": "Ponto Fraco",
+            "4": "Itens de Arma|ADD_ITEM",
+            "5": "Absinto",
+            "6": "PHYSICAL_ELEMENT"
+          }
+      },
+      "armor": {
+        "6": "Sem armadura",
+         "7": "Proteção de luz",
+         "8": "Proteção moderada",
+         "9": "Proteção Pesada",
+         "10": "Quase impermeável"
+      },
+      "attack": {
+        "1": "Não treinado",
+         "2": "Treinado",
+         "3": "Perigoso",
+         "4": "Mestre",
+         "5": "Letal"
+      },
+      "statDesc": {
+        "STR": {
+            "1": "Fraco",
+            "2": "Médio",
+            "3": "Forte",
+            "4": "Poderoso",
+            "5": "Monstruoso"
+        },
+        "DEX": {
+            "1": "Lento",
+            "2": "Médio",
+            "3": "Ágil",
+            "4": "Rápido",
+            "5": "Desfocado"
+        },
+        "WIL": {
+            "1": "Idiota",
+            "2": "Médio",
+            "3": "Inteligente",
+            "4": "Brilhante",
+            "5": "Gênio"
+        }
+      }
+    },
+    "insanities": {
+      "1": {
+        "1": "Persona alternativo - |PERSONALITY",
+        "2": "Sempre mente",
+         "3": "Sempre educado",
+         "4": "Forma animal",
+         "5": "Não é possível contar",
+         "6": "Não pode mentir"
+      },
+      "2": {
+        "1": "Cego para rosto",
+        "2": "Medo PC",
+        "3": "Tem medo de pássaros",
+        "4": "Tem medo de sangue",
+        "5": "Livros de medos",
+        "6": "Tem medo da escuridão"
+      },
+      "3": {
+        "1": "Tem medo de ouro",
+        "2": "Tem medo de cavalos",
+        "3": "Medo de ferro",
+        "4": "Tem medo de música",
+        "5": "Tem medo da própria mão",
+        "6": "Tem medo de chuva"
+      },
+      "4": {
+        "1": "Tem medo de rios",
+        "2": "Medo silêncio",
+        "3": "O medo dorme",
+        "4": "Tem medo da luz solar",
+        "5": "Tem medo da lua",
+        "6": "Tem medo de árvores"
+      },
+      "5": {
+        "1": "Tem medo de fogo",
+        "2": "Gênio",
+        "3": "Lindo",
+        "4": "Odeia violência",
+        "5": "Invisível",
+        "6": "Invulnerável"
+      },
+      "6": {
+        "1": "Abilidade de Monstro",
+        "2": "Recurso Monstro",
+        "3": "Traço de Monstro",
+        "4": "Deve cantar",
+        "5": "Diz pensamentos",
+        "6": "Vê pessoas mortas"
+      }
+    },
+    "treasure": {
+      "valMaterials": {
+        "1": {
+            "1": "Alabastro",
+            "2": "Âmbar",
+            "3": "Aquamarine",
+            "4": "Azurita",
+            "5": "Berilo",
+            "6": "Pérola Negra"
+          },
+          "2": {
+            "1": "Pedra de Sangue",
+            "2": "Osso China",
+            "3": "calcedônia",
+            "4": "Cinábrio",
+            "5": "Coral",
+            "6": "Diamante"
+          },
+          "3": {
+            "1": "Ébano",
+            "2": "Esmeralda",
+            "3": "Ágata de Fogo",
+            "4": "Granada",
+            "5": "Ouro",
+            "6": "Marfim"
+          },
+          "4": {
+            "1": "Jade",
+            "2": "Jaspe",
+            "3": "Jato",
+            "4": "Lápis Lazúli",
+            "5": "Malaquita",
+            "6": "Pedra da Lua"
+          },
+          "5": {
+            "1": "Ônix",
+            "2": "Opala",
+            "3": "Pérola",
+            "4": "Platina",
+            "5": "Porcelana",
+            "6": "Rubi"
+          },
+          "6": {
+            "1": "Safira",
+            "2": "Serpentina",
+            "3": "Prata",
+            "4": "Ferro Estrela",
+            "5": "Topázio",
+            "6": "Turquesa"
+          }
+      }
+    },
+    "methods": {
+        "1": {
+            "1": "Alquimia",
+            "2": "chantagem",
+            "3": "Bluster",
+            "4": "Suborno",
+            "5": "Intimidação",
+            "6": "Burocracia"
+          },
+          "2": {
+            "1": "Encanto",
+            "2": "Comércio",
+            "3": "Companheiros",
+            "4": "Debate",
+            "5": "Engano",
+            "6": "Dedução"
+          },
+          "3": {
+            "1": "Eloquência",
+            "2": "Espionagem",
+            "3": "Favores",
+            "4": "Falar rápido",
+            "5": "Trabalho duro",
+            "6": "Humor"
+          },
+          "4": {
+            "1": "Investigação",
+            "2": "Manobras legais",
+            "3": "Manipulação",
+            "4": "Desorientação",
+            "5": "Dinheiro",
+            "6": "Irritando"
+          },
+          "5": {
+            "1": "Negociações",
+            "2": "Persistência",
+            "3": "Piedade",
+            "4": "Preparação",
+            "5": "Raciocínio rápido",
+            "6": "Pesquisa"
+          },
+          "6": {
+            "1": "Rumores",
+            "2": "Sabotagem",
+            "3": "Trabalho em equipe",
+            "4": "Roubo",
+            "5": "Ameaças",
+            "6": "Violência"
+          }
     }
-}
+  }

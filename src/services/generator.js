@@ -29,6 +29,14 @@ class Generator {
         return this.diceRoll(6)
     }
 
+    nd6(numRolls) {
+        const rolls = []
+        for (let index = 0; index < numRolls; index++) {
+            rolls.push(this.d6())
+        }
+        return (numRolls>0 ? rolls.reduce((partialSum, a) => partialSum + a, 0) :0)
+    }
+
     gender() {
         return {
             "1": "male",
@@ -77,8 +85,8 @@ class Generator {
         return Data[this.lang].physicalDetail[this.d6()][this.d6()]
     }
 
-    background() {
-        return Data[this.lang].background[this.d6()][this.d6()]
+    background(status) {
+        return Data[this.lang].background[status][this.d6()][this.d6()]
     }
 
     clothing() {
@@ -99,7 +107,255 @@ class Generator {
             .join(" ")
     }
 
+    assets() {
+        return Data[this.lang].assets[this.d6()][this.d6()]
+    }
+
+    liabilities() {
+        return Data[this.lang].liabilities[this.d6()][this.d6()]
+    }
+
+    removeAddTag(stringIn){
+        return stringIn.substring(0,stringIn.indexOf("|"))
+    }
+
+
+    goals(){
+        let goals = {}
+        goals.value = Data[this.lang].goals[this.d6()][this.d6()]
+        if(goals.value.toUpperCase().includes("|ADD_FACTION")) {
+            goals.value = this.removeAddTag(goals.value)
+            goals.faction = this.factions()
+        } else if(goals.value.toUpperCase().includes("|ADD_ITEM")){
+            goals.value = this.removeAddTag(goals.value)
+            goals.item = this.item()
+        } else if(goals.value.toUpperCase().includes("NPC")){
+            goals.npc = this.npc()
+        }
+
+        return goals
+    }
+
+    misfortunes() {
+        return Data[this.lang].misfortunes[this.d6()][this.d6()]
+    }
+
+    missions() {
+        return Data[this.lang].misfortunes[this.d6()][this.d6()]
+    }
+
+    secrets() {
+        let secret = {}
+        secret.name = Data[this.lang].secrets[this.d6()][this.d6()] 
+        if(secret.name.includes('NPC')){
+            secret.npc = this.npc()
+        } else if(secret.name.includes('|ADD_MISFORTUNE')){
+            secret.name =this.removeAddTag(secret.name)
+            secret.misfortune = this.misfortunes()
+        }
+        return secret
+    }
+
+    reputations() {
+        return Data[this.lang].reputations[this.d6()][this.d6()]
+    }
+
+    hobbies() {
+        return Data[this.lang].hobbies[this.d6()][this.d6()]
+    }
+
+    factions() {
+        let faction = {};
+        faction.type = Data[this.lang].factions[this.d6()][this.d6()]
+        faction.trait = Data[this.lang].factions.traits[this.d6()][this.d6()]
+        faction.goal = Data[this.lang].factions.goals[this.d6()][this.d6()]
+        if(faction.goal.toUpperCase().includes("|ADD_FACTION")) { 
+            faction.goal = this.removeAddTag(faction.goal)
+            faction.goal.faction = this.factions()
+        }
+        if(faction.goal.toUpperCase().includes("|ADD_MONSTER")) {
+            faction.goal = this.removeAddTag(faction.goal)
+            faction.goal.monster = this.monsters()
+        }
+        return faction
+    }
+
+    armorDescription(value){
+        return Data[this.lang].monsters.armor[value]
+    }
+
+    attackBonus(){
+        const roll  = this.diceRoll(5)
+        const desc = Data[this.lang].monsters.attack[roll]
+        return {bonus: roll, description: desc}
+    }
+
+    methods(){
+        return Data[this.lang].methods[this.d6()][this.d6()]
+    }
+
+    insanities(){
+        let insanity = Data[this.lang].insanities[this.d6()][this.d6()]
+        if(insanity.includes("|PERSONALITY")){
+            insanity.replace("|PERSONALITY", this.personality())
+        }
+         
+        return 
+    }
+
+    valMaterials(){
+        return Data[this.lang].treasure.valMaterials[this.d6()][this.d6()]
+    }
+
+    monsterStat(type){
+        const roll = this.diceRoll(5)
+        return {value:roll, description: Data[this.lang].monsters.statDesc[type.toUpperCase()][roll]}
+    }
+    
+    monsterType(base){
+        return Data[this.lang].monsters.types[base][this.d6()][this.d6()]
+    }
+
+    monsterFeature(){
+        return Data[this.lang].monsters.feature[this.d6()][this.d6()]
+    }
+
+    monsterTrait(){
+        let trait = Data[this.lang].monsters.traits[this.d6()][this.d6()]
+        trait = (trait.includes("ETHEREAL_ELEMENT"))? this.monsterElement("etherealElement")+"-like":trait
+        trait = (trait.includes("PHYSICAL_ELEMENT"))? this.monsterElement("physicalElement")+"-like":trait
+
+        return trait
+    }
+
+    monsterAbility(){
+        let ability = Data[this.lang].monsters.abilities[this.d6()][this.d6()]
+        ability = (ability.includes("ETHEREAL_EFFECT"))? this.monsterElement("etherealEffect"):ability
+        ability = (ability.includes("PHYSICAL_EFFECT"))? this.monsterElement("physicalEffect"):ability
+        
+        return ability
+    }
+
+    monsterTactics(){
+        return Data[this.lang].monsters.tactics[this.d6()][this.d6()]
+    }
+
+    monsterPersonality(){
+        return Data[this.lang].monsters.personality[this.d6()][this.d6()]
+    }
+
+    monsterWeakness(){
+        let weakness = Data[this.lang].monsters.weakness[this.d6()][this.d6()]
+        weakness = (weakness.includes("PHYSICAL_ELEMENT"))? this.monsterElement("physicalElement"):weakness
+        weakness = (weakness.includes("|ADD_ITEM"))? this.weapons():weakness
+        weakness = (weakness.includes("METHODS"))? this.methods():weakness
+        weakness = (weakness.includes("INSANITIES"))? this.insanities():weakness
+        weakness = (weakness.includes("VAL_MATERIALS"))? this.valMaterials():weakness
+        
+        return weakness
+    }
+
+    monsterElement(component){
+        return Data[this.lang].spellComponent[component][this.d6()][this.d6()]
+    }
+ // formatLists(){
+    //     const fruits  =[
+    //         "Alchemy","Blackmail","Bluster","Bribery","Bullying","Bureaucracy",
+    //         "Charm","Commerce","Cronies","Debate","Deceit","Deduction",
+    //         "Eloquence","Espionage","Fast-talking","FAvors","Hard work","Humor",
+    //         "Investigation","Legal maneuvers","Manipulation","Misdirection","Money","Nagging",
+    //         "Negotiations","Persistence","Piety","Preparation","Quick wit","Research",
+    //         "Rumors","Sabotage","Teamwork","Theft","Threats","Violence"
+    //     ]
+        
+    //     const values = fruits.sort()
+    //     let outerIdx = 1;
+    //     let idx = 0;
+    //     let jsonVal = '{'
+    //         values.forEach(v => {
+    //             idx++;
+    //             if(idx===1) jsonVal = jsonVal.concat("\n").concat('"' + outerIdx).concat('": {')
+    //             console.log('"' +idx+'":"' + v + '"')
+    //             jsonVal = jsonVal.concat('"' +idx+'":"' + v + '"')
+    //             if(idx===6) {
+    //                 idx = 0;
+    //                 if(outerIdx===6)
+    //                     jsonVal = jsonVal.concat("}")
+    //                 else
+    //                     jsonVal = jsonVal.concat("},") 
+
+    //                 outerIdx++;
+    //             }else{
+    //                 jsonVal = jsonVal.concat(",")
+    //             };
+                
+    //         });
+    //     console.log(jsonVal  + "}")
+    // }
+    //     ]
+        
+    //     const values = fruits.sort()
+    //     let outerIdx = 1;
+    //     let idx = 0;
+    //     let jsonVal = '{'
+    //         values.forEach(v => {
+    //             idx++;
+    //             if(idx===1) jsonVal = jsonVal.concat("\n").concat('"' + outerIdx).concat('": {')
+    //             console.log('"' +idx+'":"' + v + '"')
+    //             jsonVal = jsonVal.concat('"' +idx+'":"' + v + '"')
+    //             if(idx===6) {
+    //                 idx = 0;
+    //                 if(outerIdx===6)
+    //                     jsonVal = jsonVal.concat("}")
+    //                 else
+    //                     jsonVal = jsonVal.concat("},") 
+
+    //                 outerIdx++;
+    //             }else{
+    //                 jsonVal = jsonVal.concat(",")
+    //             };
+                
+    //         });
+    //     console.log(jsonVal  + "}")
+    // }
+
+    monsters() {
+        //this.formatLists()
+        const hitDie = this.d6()
+        const armorDie = this.diceRoll(5)+5
+        const monsterBase = {1: "Aerial", 2:"Terrestrial", 3:"Aquatic"}[this.diceRoll(3)]
+        let monster = {
+            hitdie : hitDie,
+            health : this.nd6(hitDie),
+            base : monsterBase,
+            type: this.monsterType(monsterBase),
+            feature: this.monsterFeature(),
+            trait: this.monsterTrait(),
+            ability: this.monsterAbility(),
+            tactics: this.monsterTactics(),
+            personality: this.monsterPersonality(),
+            weakness: this.monsterWeakness(),
+            armor : {
+                    armor:  armorDie, 
+                    description : this.armorDescription(armorDie)
+            },
+            attackBonus: this.attackBonus(),
+            STR: this.monsterStat("STR"),
+            DEX: this.monsterStat("DEX"),
+            WIL: this.monsterStat("WIL"),
+
+        }
+        
+        return monster
+    }
+
     character() {
+        const social = {
+            1: "Civilized",
+            2: "Underworld",
+            3: "Wilderness"
+        }[this.diceRoll(3)]
+
         const origins = {
             1: "highborn",
             2: "lowborn"
@@ -115,7 +371,7 @@ class Generator {
             weapons: this.weapons(),
             appearance: this.appearance(),
             physicalDetail: this.physicalDetail(),
-            background: this.background(),
+            background: this.background(social),
             clothing: this.clothing(),
             personality: this.personality(),
             mannerism: this.mannerism()
@@ -126,6 +382,43 @@ class Generator {
         }
 
         return char
+    }
+
+    npc() {
+        const area = {
+            1: "Civilized",
+            2: "Underworld",
+            3: "Wilderness"
+        }[this.diceRoll(3)]
+
+        const origins = {
+            1: "highborn",
+            2: "lowborn"
+        }[this.diceRoll(2)]
+
+        const gender = this.gender()
+        let npc = {
+            name: this.fullname(gender, origins),
+            gender: gender,
+            area : area,
+            background : this.background(area),
+            assets : this.assets(),
+            liabilities : this.liabilities(),
+            goals  : this.goals(),
+            misfortunes : this.misfortunes(),
+            methods: this.methods(),
+            appearance: this.appearance(),
+            physicalDetail: this.physicalDetail(),
+            clothing: this.clothing(),
+            personality: this.personality(),
+            mannerism: this.mannerism(),
+            secret: this.secrets(),
+            reputation: this.reputations(),
+            hobbies: this.hobbies(),
+            
+        } 
+
+        return npc
     }
 }
 
